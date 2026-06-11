@@ -6006,3 +6006,141 @@ body {
     padding-right: 0;
   }
 }
+
+/* SERVICES FLOW TABLET REDESIGN */
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  .services-flow {
+    padding: 58px 0 64px;
+  }
+
+  .services-flow__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .services-flow__intro {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .services-flow__intro h2 {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: clamp(38px, 6vw, 58px);
+    line-height: 1.02;
+  }
+
+  .services-flow__intro p:not(.section-label) {
+    max-width: 620px;
+    margin: 16px auto 0;
+    font-size: 15px;
+  }
+
+  .services-flow__visual {
+    min-height: 185px;
+    width: min(100%, 520px);
+    margin: 0 auto;
+  }
+
+  .services-flow__circle {
+    width: 145px;
+    height: 145px;
+  }
+
+  .services-flow__circle::before {
+    inset: -18px;
+  }
+
+  .services-flow__circle strong {
+    font-size: 34px;
+  }
+
+  .services-flow__circle span {
+    font-size: 10px;
+  }
+
+  .services-flow__bubble {
+    width: 46px;
+    height: 46px;
+  }
+
+  .services-flow__bubble svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .services-flow__bubble--one {
+    top: 24px;
+    left: 96px;
+  }
+
+  .services-flow__bubble--two {
+    top: 64px;
+    right: 96px;
+  }
+
+  .services-flow__bubble--three {
+    left: 130px;
+    bottom: 22px;
+  }
+
+  .services-flow__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+  }
+
+  .services-flow__item,
+  .services-flow__item:nth-child(odd),
+  .services-flow__item:nth-child(even) {
+    min-height: 76px;
+    padding: 14px 58px 14px 0;
+    border-right: 0;
+    background: transparent;
+  }
+
+  .services-flow__item:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    padding-right: 68px;
+  }
+
+  .services-flow__item:nth-child(even) {
+    padding-left: 18px;
+  }
+
+  .services-flow__text strong {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  .services-flow__text small {
+    max-width: 210px;
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.32;
+  }
+
+  .services-flow__item>i,
+  .services-flow__item>svg {
+    right: 16px;
+    width: 38px;
+    height: 38px;
+    padding: 8px;
+  }
+
+  .services-flow__item:nth-child(even)>i,
+  .services-flow__item:nth-child(even)>svg {
+    right: 0;
+  }
+
+  .services-flow__line {
+    top: 46%;
+    height: 90px;
+    opacity: 0.46;
+  }
+}
+
