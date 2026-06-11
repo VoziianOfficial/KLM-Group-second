@@ -2129,3 +2129,350 @@ body {
     height: 82px;
   }
 }
+
+/* SOFT HERO PHOTO + BIG UP/DOWN DIAGRAM */
+
+.klm-hero-wave {
+  min-height: 520px;
+  padding: 64px 0 108px;
+}
+
+.klm-hero-wave__inner {
+  grid-template-columns: minmax(0, 0.86fr) minmax(520px, 1.14fr);
+  gap: 34px;
+}
+
+.klm-hero-wave__visual {
+  position: relative;
+  min-height: 390px;
+  overflow: visible;
+  border-radius: 0;
+  box-shadow: none;
+  isolation: isolate;
+}
+
+.klm-hero-wave__visual img {
+  position: absolute;
+  inset: -34px -80px -34px -20px;
+  z-index: 0;
+  width: calc(100% + 120px);
+  height: calc(100% + 68px);
+  object-fit: cover;
+  object-position: center right;
+  opacity: 0.92;
+  transform: scale(1.04);
+  animation: klmSoftHeroPhoto 13s ease-in-out infinite alternate;
+
+  -webkit-mask-image: radial-gradient(ellipse at 62% 50%,
+      #000 0%,
+      #000 42%,
+      rgba(0, 0, 0, 0.72) 58%,
+      rgba(0, 0, 0, 0.25) 70%,
+      transparent 84%);
+  mask-image: radial-gradient(ellipse at 62% 50%,
+      #000 0%,
+      #000 42%,
+      rgba(0, 0, 0, 0.72) 58%,
+      rgba(0, 0, 0, 0.25) 70%,
+      transparent 84%);
+}
+
+@keyframes klmSoftHeroPhoto {
+  from {
+    transform: scale(1.04) translateX(0);
+  }
+
+  to {
+    transform: scale(1.09) translateX(-18px);
+  }
+}
+
+.klm-hero-wave__overlay {
+  position: absolute;
+  inset: -40px -90px -40px -70px;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, var(--dark-navy) 0%, rgba(16, 25, 47, 0.62) 20%, rgba(16, 25, 47, 0.12) 52%, rgba(10, 7, 16, 0.42) 100%),
+    radial-gradient(circle at 74% 36%, rgba(241, 90, 36, 0.22), transparent 34%),
+    radial-gradient(circle at 42% 80%, rgba(241, 90, 36, 0.14), transparent 28%);
+}
+
+/* hide old svg chart if it is still in HTML */
+.klm-hero-wave__chart {
+  display: none;
+}
+
+/* BIG UP/DOWN DIAGRAM */
+
+.klm-hero-wave__diagram {
+  position: absolute;
+  left: 4%;
+  right: 2%;
+  bottom: 14px;
+  z-index: 3;
+  height: 245px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 10px;
+  pointer-events: none;
+}
+
+.klm-hero-wave__diagram::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.34),
+      rgba(241, 90, 36, 0.5),
+      transparent);
+}
+
+.klm-hero-wave__diagram::after {
+  content: "";
+  position: absolute;
+  inset: 18px 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 100% 40px, 58px 100%;
+  opacity: 0.45;
+}
+
+.klm-diagram-column {
+  position: relative;
+  z-index: 2;
+  width: clamp(9px, 1.2vw, 15px);
+  height: 100%;
+  display: block;
+}
+
+.klm-diagram-column::before,
+.klm-diagram-column::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-radius: 999px;
+  transform-origin: center bottom;
+  animation: klmDiagramPulse 2.8s ease-in-out infinite;
+  animation-delay: var(--delay);
+}
+
+.klm-diagram-column::before {
+  bottom: 50%;
+  height: var(--up);
+  background: linear-gradient(180deg, var(--carrot-orange), rgba(241, 90, 36, 0.38));
+  box-shadow: 0 0 18px rgba(241, 90, 36, 0.45);
+}
+
+.klm-diagram-column::after {
+  top: 50%;
+  height: var(--down);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.08));
+  transform-origin: center top;
+}
+
+@keyframes klmDiagramPulse {
+
+  0%,
+  100% {
+    transform: scaleY(0.58);
+    opacity: 0.48;
+  }
+
+  48% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 1100px) {
+  .klm-hero-wave__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .klm-hero-wave__visual {
+    min-height: 360px;
+  }
+
+  .klm-hero-wave__visual img {
+    inset: -24px -44px -24px -44px;
+    width: calc(100% + 88px);
+    height: calc(100% + 48px);
+    object-position: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .klm-hero-wave {
+    padding: 42px 0 86px;
+  }
+
+  .klm-hero-wave__visual {
+    min-height: 285px;
+  }
+
+  .klm-hero-wave__diagram {
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    height: 170px;
+    gap: 7px;
+  }
+
+  .klm-diagram-column {
+    width: 8px;
+  }
+}
+
+/* HERO PHOTO AS RIGHT BACKGROUND + LOWER DIAGRAM */
+
+.klm-hero-wave {
+  position: relative;
+  min-height: 520px;
+  padding: 64px 0 108px;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, var(--dark-navy) 0%, rgba(16, 25, 47, 0.92) 34%, rgba(10, 7, 16, 0.38) 68%, rgba(10, 7, 16, 0.72) 100%),
+    url("../images/home/hero-circle.jpg") right center / auto 118% no-repeat,
+    linear-gradient(135deg, var(--dark-navy) 0%, var(--deep-black) 55%, var(--soft-black) 100%);
+}
+
+/* растушевка фото, чтобы не было края */
+.klm-hero-wave::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, var(--dark-navy) 0%, rgba(16, 25, 47, 0.86) 34%, rgba(16, 25, 47, 0.18) 62%, rgba(10, 7, 16, 0.52) 100%),
+    radial-gradient(circle at 72% 36%, rgba(241, 90, 36, 0.2), transparent 34%),
+    linear-gradient(180deg, rgba(10, 7, 16, 0.1), rgba(10, 7, 16, 0.55));
+}
+
+/* контент поверх background */
+.klm-hero-wave__inner {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.klm-hero-wave__content {
+  max-width: 560px;
+  position: relative;
+  z-index: 3;
+}
+
+/* visual больше не отдельная фото-карточка, а слой для диаграммы */
+.klm-hero-wave__visual {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -28px;
+  width: min(58vw, 760px);
+  min-height: auto;
+  overflow: visible;
+  border-radius: 0;
+  box-shadow: none;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* скрываем img, потому что фото теперь background */
+.klm-hero-wave__visual img {
+  display: none;
+}
+
+.klm-hero-wave__overlay {
+  display: none;
+}
+
+/* график не меняем, только опускаем ниже */
+.klm-hero-wave__diagram {
+  left: 4%;
+  right: 2%;
+  bottom: -18px;
+  height: 245px;
+}
+
+/* чтобы нижняя волна была поверх фона */
+.klm-hero-wave__bottom {
+  z-index: 5;
+}
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+  .klm-hero-wave {
+    background:
+      linear-gradient(90deg, var(--dark-navy) 0%, rgba(16, 25, 47, 0.82) 46%, rgba(10, 7, 16, 0.48) 100%),
+      url("../images/home/hero-circle.jpg") right center / cover no-repeat,
+      linear-gradient(135deg, var(--dark-navy), var(--deep-black));
+  }
+
+  .klm-hero-wave__inner {
+    display: block;
+  }
+
+  .klm-hero-wave__visual {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    margin-top: 24px;
+    right: auto;
+    bottom: auto;
+  }
+
+  .klm-hero-wave__diagram {
+    bottom: -10px;
+    height: 210px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+  .klm-hero-wave {
+    padding: 42px 0 92px;
+    background:
+      linear-gradient(180deg, rgba(16, 25, 47, 0.92) 0%, rgba(10, 7, 16, 0.74) 62%, rgba(10, 7, 16, 0.92) 100%),
+      url("../images/home/hero-circle.jpg") center bottom / cover no-repeat,
+      linear-gradient(135deg, var(--dark-navy), var(--deep-black));
+  }
+
+  .klm-hero-wave__visual {
+    height: 210px;
+    margin-top: 18px;
+  }
+
+  .klm-hero-wave__diagram {
+    bottom: -14px;
+    height: 165px;
+    gap: 7px;
+  }
+}
+
+/* FINAL HERO DIAGRAM POSITION */
+
+.klm-hero-wave__diagram {
+  bottom: -34px;
+  height: 215px;
+}
+
+@media (max-width: 760px) {
+  .klm-hero-wave__diagram {
+    bottom: -18px;
+    height: 155px;
+    gap: 7px;
+  }
+}
