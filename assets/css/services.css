@@ -3577,3 +3577,410 @@ body {
 .service-icon-strip--orange .service-icon-strip__item:hover {
   transform: translateY(-6px);
 }
+
+/* RELATED SERVICES WOW CONSTELLATION */
+
+.related-services-wow {
+  position: relative;
+  padding: 82px 0 108px;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(241, 90, 36, 0.24), transparent 28%),
+    radial-gradient(circle at 84% 72%, rgba(255, 255, 255, 0.07), transparent 26%),
+    linear-gradient(135deg, var(--deep-black), var(--dark-navy));
+}
+
+.related-services-wow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 38px 38px, 90px 90px, 90px 90px;
+  opacity: 0.32;
+  mask-image: linear-gradient(180deg, transparent, #000 18%, #000 82%, transparent);
+  pointer-events: none;
+}
+
+.related-services-wow__glow {
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  z-index: 0;
+  width: 720px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(241, 90, 36, 0.14);
+  filter: blur(38px);
+  transform: translate(-50%, -50%) rotate(-8deg);
+  animation: relatedGlowFloat 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.related-services-wow__line {
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  top: 61%;
+  z-index: 1;
+  height: 2px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(241, 90, 36, 0.65),
+      rgba(255, 255, 255, 0.28),
+      rgba(241, 90, 36, 0.65),
+      transparent);
+  transform: rotate(-2deg);
+  pointer-events: none;
+}
+
+.related-services-wow__line::before {
+  content: "";
+  position: absolute;
+  inset: -8px 0;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(241, 90, 36, 0.22),
+      transparent);
+  filter: blur(8px);
+}
+
+@keyframes relatedGlowFloat {
+  from {
+    transform: translate(-50%, -50%) rotate(-8deg) scale(0.96);
+  }
+
+  to {
+    transform: translate(-50%, -54%) rotate(5deg) scale(1.06);
+  }
+}
+
+.related-services-wow .container {
+  position: relative;
+  z-index: 3;
+}
+
+.related-services-wow .section-heading {
+  max-width: 780px;
+  margin: 0 auto 58px;
+}
+
+.related-orbit-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+  align-items: center;
+}
+
+.related-orbit-card {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  min-height: 218px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding: 30px 22px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background:
+    radial-gradient(circle at 50% 18%, rgba(241, 90, 36, 0.18), transparent 38%),
+    rgba(255, 255, 255, 0.045);
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, 0.32),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  transition:
+    transform 0.38s ease,
+    border-color 0.38s ease,
+    box-shadow 0.38s ease,
+    background 0.38s ease;
+}
+
+.related-orbit-card:nth-child(2),
+.related-orbit-card:nth-child(4) {
+  transform: translateY(46px);
+}
+
+.related-orbit-card:nth-child(3) {
+  transform: translateY(-22px);
+}
+
+.related-orbit-card::before {
+  content: attr(data-index);
+  position: absolute;
+  left: 50%;
+  top: 18px;
+  color: rgba(255, 255, 255, 0.16);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  transform: translateX(-50%);
+  transition:
+    color 0.38s ease,
+    transform 0.38s ease;
+}
+
+.related-orbit-card::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: 50%;
+  border: 1px dashed rgba(241, 90, 36, 0.28);
+  transition:
+    transform 0.38s ease,
+    border-color 0.38s ease,
+    opacity 0.38s ease;
+}
+
+.related-orbit-card>i,
+.related-orbit-card>svg {
+  position: relative !important;
+  z-index: 2;
+  width: 42px !important;
+  height: 42px !important;
+  color: var(--carrot-orange) !important;
+  stroke-width: 1.7;
+  transition:
+    transform 0.38s ease,
+    color 0.38s ease,
+    filter 0.38s ease;
+}
+
+.related-orbit-card h3 {
+  position: relative;
+  z-index: 2;
+  max-width: 160px;
+  margin: 0 auto;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 1.08;
+}
+
+.related-orbit-card p {
+  position: relative;
+  z-index: 2;
+  max-width: 170px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12px;
+  line-height: 1.38;
+}
+
+.related-orbit-card span {
+  position: relative;
+  z-index: 2;
+  margin-top: 2px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.38s ease;
+}
+
+.related-orbit-card:hover {
+  border-color: rgba(241, 90, 36, 0.55);
+  background:
+    radial-gradient(circle at 50% 18%, rgba(241, 90, 36, 0.28), transparent 42%),
+    rgba(255, 255, 255, 0.075);
+  box-shadow:
+    0 38px 86px rgba(0, 0, 0, 0.38),
+    0 18px 46px rgba(241, 90, 36, 0.18);
+}
+
+.related-orbit-card:nth-child(1):hover,
+.related-orbit-card:nth-child(5):hover {
+  transform: translateY(-12px) rotate(-4deg);
+}
+
+.related-orbit-card:nth-child(2):hover,
+.related-orbit-card:nth-child(4):hover {
+  transform: translateY(30px) rotate(4deg);
+}
+
+.related-orbit-card:nth-child(3):hover {
+  transform: translateY(-36px) rotate(-3deg);
+}
+
+.related-orbit-card:hover::before {
+  color: rgba(241, 90, 36, 0.26);
+  transform: translateX(-50%) scale(1.12);
+}
+
+.related-orbit-card:hover::after {
+  transform: rotate(14deg) scale(1.07);
+  border-color: rgba(241, 90, 36, 0.55);
+}
+
+.related-orbit-card:hover>i,
+.related-orbit-card:hover>svg {
+  color: var(--white) !important;
+  transform: translateY(-5px) rotate(-8deg) scale(1.08);
+  filter:
+    drop-shadow(0 0 18px rgba(241, 90, 36, 0.46)) drop-shadow(0 14px 24px rgba(0, 0, 0, 0.28));
+}
+
+.related-orbit-card:hover span {
+  color: var(--carrot-orange);
+}
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+  .related-orbit-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 760px;
+    margin: 0 auto;
+    gap: 22px;
+  }
+
+  .related-orbit-card {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .related-orbit-card:nth-child(2),
+  .related-orbit-card:nth-child(3),
+  .related-orbit-card:nth-child(4) {
+    transform: none;
+  }
+
+  .related-orbit-card:hover,
+  .related-orbit-card:nth-child(1):hover,
+  .related-orbit-card:nth-child(2):hover,
+  .related-orbit-card:nth-child(3):hover,
+  .related-orbit-card:nth-child(4):hover,
+  .related-orbit-card:nth-child(5):hover {
+    transform: translateY(-10px) rotate(-3deg);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .related-services-wow {
+    padding: 56px 0 64px;
+  }
+
+  .related-services-wow .section-heading {
+    margin-bottom: 32px;
+  }
+
+  .related-services-wow__line {
+    display: none;
+  }
+
+  .related-orbit-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .related-orbit-card {
+    width: min(100%, 292px);
+    min-height: 292px;
+  }
+
+  .related-orbit-card p {
+    font-size: 12.5px;
+  }
+}
+
+/* RELATED SERVICES — REMOVE NUMBERS, ICONS INSTEAD */
+
+.related-orbit-card::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* делаем место под большую иконку сверху */
+.related-orbit-card {
+  justify-content: center;
+  padding: 82px 24px 28px;
+}
+
+/* иконка теперь вместо цифры */
+.related-orbit-card>i,
+.related-orbit-card>svg {
+  position: absolute !important;
+  left: 50% !important;
+  top: 24px !important;
+  z-index: 4;
+  width: 52px !important;
+  height: 52px !important;
+  color: var(--carrot-orange) !important;
+  transform: translateX(-50%);
+  stroke-width: 1.65;
+  transition:
+    transform 0.38s ease,
+    color 0.38s ease,
+    filter 0.38s ease,
+    stroke-width 0.38s ease;
+}
+
+/* мягкое свечение под иконкой */
+.related-orbit-card .related-icon-glow {
+  display: none;
+}
+
+.related-orbit-card h3 {
+  max-width: 170px;
+  margin-top: 0;
+}
+
+.related-orbit-card p {
+  max-width: 175px;
+}
+
+.related-orbit-card:hover>i,
+.related-orbit-card:hover>svg {
+  color: var(--white) !important;
+  transform: translateX(-50%) translateY(-4px) rotate(-8deg) scale(1.12);
+  stroke-width: 1.9;
+  filter:
+    drop-shadow(0 0 18px rgba(241, 90, 36, 0.55)) drop-shadow(0 16px 26px rgba(0, 0, 0, 0.32));
+}
+
+/* чтобы старая hover-анимация не пыталась двигать цифры */
+.related-orbit-card:hover::before {
+  display: none !important;
+}
+
+/* TABLET */
+@media (max-width: 1100px) {
+  .related-orbit-card {
+    padding-top: 82px;
+  }
+
+  .related-orbit-card>i,
+  .related-orbit-card>svg {
+    top: 24px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .related-orbit-card {
+    padding: 86px 24px 30px;
+  }
+
+  .related-orbit-card>i,
+  .related-orbit-card>svg {
+    top: 26px !important;
+    width: 54px !important;
+    height: 54px !important;
+  }
+}
