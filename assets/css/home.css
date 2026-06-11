@@ -5148,3 +5148,104 @@ body {
   }
 }
 
+/* CAMPAIGN FEATURES CARD HOVERS */
+
+.campaign-features .info-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.campaign-features .info-card::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 0;
+  height: 3px;
+  border-radius: 999px 999px 0 0;
+  background: linear-gradient(90deg,
+      var(--carrot-orange),
+      rgba(16, 25, 47, 0.35));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.campaign-features .info-card::after {
+  content: "";
+  position: absolute;
+  right: -54px;
+  top: -54px;
+  z-index: -1;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background: rgba(241, 90, 36, 0.08);
+  opacity: 0;
+  transform: scale(0.7);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.campaign-features .info-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(241, 90, 36, 0.24);
+  box-shadow: 0 24px 54px rgba(16, 25, 47, 0.11);
+}
+
+.campaign-features .info-card:hover::before {
+  transform: scaleX(1);
+}
+
+.campaign-features .info-card:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.campaign-features .info-card>i,
+.campaign-features .info-card>svg {
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    filter 0.3s ease;
+}
+
+.campaign-features .info-card:hover>i,
+.campaign-features .info-card:hover>svg {
+  color: var(--carrot-orange);
+  transform: translateY(-4px) rotate(-6deg) scale(1.08);
+  filter: drop-shadow(0 12px 18px rgba(241, 90, 36, 0.22));
+}
+
+.campaign-features .info-card h3 {
+  transition: color 0.3s ease;
+}
+
+.campaign-features .info-card:hover h3 {
+  color: var(--carrot-orange);
+}
+
+/* CAMPAIGN FEATURES CENTER HEADING */
+
+.campaign-features .section-heading {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.campaign-features .section-heading h2 {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.campaign-features .section-heading h2 span {
+  display: inline;
+}
