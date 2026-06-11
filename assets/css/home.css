@@ -199,7 +199,7 @@ p {
   transform: translateY(-2px);
 }
 
-/* HEADER */
+
 
 .site-header {
   position: sticky;
@@ -354,7 +354,7 @@ p {
   border-radius: 999px;
 }
 
-/* MOBILE MENU */
+
 
 .mobile-menu {
   position: fixed;
@@ -470,7 +470,7 @@ p {
   color: var(--carrot-orange);
 }
 
-/* HERO */
+
 
 .hero {
   position: relative;
@@ -623,7 +623,7 @@ p {
   bottom: 60px;
 }
 
-/* KEYWORDS */
+
 
 .keywords-strip {
   overflow: hidden;
@@ -669,7 +669,7 @@ p {
   }
 }
 
-/* ABOUT */
+
 
 .about {
   padding: 92px 0 70px;
@@ -769,7 +769,7 @@ p {
   font-size: 14px;
 }
 
-/* CORE FOCUS */
+
 
 .core-focus {
   padding: 36px 0 92px;
@@ -796,7 +796,7 @@ p {
   font-size: 16px;
 }
 
-/* SERVICES */
+
 
 .services-preview {
   position: relative;
@@ -882,7 +882,7 @@ p {
   font-weight: 800;
 }
 
-/* WHY */
+
 
 .why {
   padding: 92px 0;
@@ -911,7 +911,7 @@ p {
   gap: 18px;
 }
 
-/* PROCESS */
+
 
 .process {
   padding: 92px 0;
@@ -967,7 +967,7 @@ p {
   font-size: 14px;
 }
 
-/* ADVANTAGE */
+
 
 .advantage {
   padding: 28px 0 92px;
@@ -1030,7 +1030,7 @@ p {
   color: var(--light-grey);
 }
 
-/* CAMPAIGN FEATURES */
+
 
 .campaign-features {
   padding: 92px 0 34px;
@@ -1042,7 +1042,7 @@ p {
   gap: 18px;
 }
 
-/* RESULTS */
+
 
 .results-strip {
   padding: 34px 0 92px;
@@ -1079,7 +1079,7 @@ p {
   line-height: 1.3;
 }
 
-/* TESTIMONIALS */
+
 
 .testimonials {
   padding: 92px 0;
@@ -1129,7 +1129,7 @@ p {
   font-size: 13px;
 }
 
-/* FAQ */
+
 
 .faq {
   padding: 92px 0;
@@ -1192,7 +1192,7 @@ p {
   transform: rotate(45deg);
 }
 
-/* CONTACT */
+
 
 .contact {
   padding: 92px 0;
@@ -1342,7 +1342,7 @@ p {
   font-size: 14px;
 }
 
-/* FOOTER */
+
 
 .site-footer {
   border-top: 1px solid var(--border-light);
@@ -1421,7 +1421,7 @@ p {
   font-size: 13px;
 }
 
-/* COOKIE */
+
 
 .cookie-banner {
   position: fixed;
@@ -1483,7 +1483,7 @@ p {
   gap: 10px;
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 1180px) {
   .desktop-nav {
@@ -1790,7 +1790,7 @@ p {
   }
 }
 
-/* FIXED HEADER */
+
 
 .site-header {
   position: fixed;
@@ -1862,7 +1862,7 @@ body {
   }
 }
 
-/* HERO LIKE REFERENCE */
+
 
 .klm-hero-wave {
   position: relative;
@@ -2071,7 +2071,7 @@ body {
   display: block;
 }
 
-/* TABLET */
+
 
 @media (max-width: 1100px) {
   .klm-hero-wave {
@@ -2093,7 +2093,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 760px) {
   .klm-hero-wave {
@@ -2130,7 +2130,7 @@ body {
   }
 }
 
-/* SOFT HERO PHOTO + BIG UP/DOWN DIAGRAM */
+
 
 .klm-hero-wave {
   min-height: 520px;
@@ -2198,12 +2198,12 @@ body {
     radial-gradient(circle at 42% 80%, rgba(241, 90, 36, 0.14), transparent 28%);
 }
 
-/* hide old svg chart if it is still in HTML */
+
 .klm-hero-wave__chart {
   display: none;
 }
 
-/* BIG UP/DOWN DIAGRAM */
+
 
 .klm-hero-wave__diagram {
   position: absolute;
@@ -2293,7 +2293,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 1100px) {
   .klm-hero-wave__inner {
@@ -2334,7 +2334,7 @@ body {
   }
 }
 
-/* HERO PHOTO AS RIGHT BACKGROUND + LOWER DIAGRAM */
+
 
 .klm-hero-wave {
   position: relative;
@@ -2347,7 +2347,7 @@ body {
     linear-gradient(135deg, var(--dark-navy) 0%, var(--deep-black) 55%, var(--soft-black) 100%);
 }
 
-/* растушевка фото, чтобы не было края */
+
 .klm-hero-wave::before {
   content: "";
   position: absolute;
@@ -2360,7 +2360,7 @@ body {
     linear-gradient(180deg, rgba(10, 7, 16, 0.1), rgba(10, 7, 16, 0.55));
 }
 
-/* контент поверх background */
+
 .klm-hero-wave__inner {
   position: relative;
   z-index: 2;
@@ -2373,7 +2373,7 @@ body {
   z-index: 3;
 }
 
-/* visual больше не отдельная фото-карточка, а слой для диаграммы */
+
 .klm-hero-wave__visual {
   position: absolute;
   top: 0;
@@ -2388,7 +2388,7 @@ body {
   z-index: 2;
 }
 
-/* скрываем img, потому что фото теперь background */
+
 .klm-hero-wave__visual img {
   display: none;
 }
@@ -2397,7 +2397,7 @@ body {
   display: none;
 }
 
-/* график не меняем, только опускаем ниже */
+
 .klm-hero-wave__diagram {
   left: 4%;
   right: 2%;
@@ -2405,12 +2405,12 @@ body {
   height: 245px;
 }
 
-/* чтобы нижняя волна была поверх фона */
+
 .klm-hero-wave__bottom {
   z-index: 5;
 }
 
-/* TABLET */
+
 
 @media (max-width: 1100px) {
   .klm-hero-wave {
@@ -2439,7 +2439,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 760px) {
   .klm-hero-wave {
@@ -2462,7 +2462,7 @@ body {
   }
 }
 
-/* FINAL HERO DIAGRAM POSITION */
+
 
 .klm-hero-wave__diagram {
   bottom: -34px;
@@ -2477,7 +2477,7 @@ body {
   }
 }
 
-/* ABOUT BIG SOFT BLOB PHOTO */
+
 
 .about {
   padding: 76px 0 58px;
@@ -2540,7 +2540,7 @@ body {
   }
 }
 
-/* soft decor blobs behind photo */
+
 
 .about-blob-decor {
   position: absolute;
@@ -2570,7 +2570,7 @@ body {
   transform: rotate(12deg);
 }
 
-/* TABLET */
+
 
 @media (max-width: 920px) {
   .about {
@@ -2609,7 +2609,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .about {
@@ -2653,7 +2653,7 @@ body {
   }
 }
 
-/* CORE FOCUS LINE SECTION */
+
 
 .core-focus-line {
   position: relative;
@@ -2777,7 +2777,7 @@ body {
   white-space: nowrap;
 }
 
-/* TABLET */
+
 
 @media (max-width: 1040px) {
   .core-focus-line__grid {
@@ -2795,7 +2795,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 700px) {
   .core-focus-line {
@@ -2840,7 +2840,7 @@ body {
   }
 }
 
-/* CORE FOCUS BACKGROUND MOVING CHART */
+
 
 .core-focus-line {
   isolation: isolate;
@@ -2928,7 +2928,7 @@ body {
   }
 }
 
-/* чтобы текст не сливался с графиком */
+
 .core-focus-line__intro {
   position: sticky;
   top: 120px;
@@ -2942,7 +2942,7 @@ body {
   z-index: 2;
 }
 
-/* TABLET */
+
 
 @media (max-width: 1040px) {
   .core-focus-line__bg-chart {
@@ -2969,7 +2969,7 @@ body {
   }
 }
 
-/* MAKE CORE FOCUS BACKGROUND CHART BRIGHTER */
+
 
 .core-focus-line__bg-chart {
   opacity: 0.68;
@@ -3003,14 +3003,14 @@ body {
   background-size: 100% 42px, 54px 100%;
 }
 
-/* MOBILE */
+
 @media (max-width: 700px) {
   .core-focus-line__bg-chart {
     opacity: 0.34;
   }
 }
 
-/* LOWER DARK BARS IN CORE FOCUS CHART */
+
 
 .core-focus-line__bg-chart span:nth-child(even) {
   max-height: 128px;
@@ -3021,7 +3021,7 @@ body {
   box-shadow: none;
 }
 
-/* отдельные черные палки делаем разной, но ниже */
+
 .core-focus-line__bg-chart span:nth-child(2) {
   --h: 42% !important;
 }
@@ -3046,7 +3046,7 @@ body {
   --h: 46% !important;
 }
 
-/* текст дополнительно защищаем от графика */
+
 .core-focus-line__intro {
   position: sticky;
   top: 120px;
@@ -3064,7 +3064,7 @@ body {
       transparent 78%);
   pointer-events: none;
 }
-/* MAKE BACKGROUND CHART MOVE LESS */
+
 
 @keyframes coreFocusChartMove {
 
@@ -3080,7 +3080,7 @@ body {
   }
 }
 
-/* ABOUT MINI CARDS HOVER */
+
 
 .mini-card {
   overflow: hidden;
@@ -3138,7 +3138,7 @@ body {
   color: var(--mini-accent, var(--carrot-orange));
 }
 
-/* card 1 */
+
 .mini-card:nth-child(1) {
   --mini-accent: var(--carrot-orange);
   --mini-glow: rgba(241, 90, 36, 0.11);
@@ -3148,7 +3148,7 @@ body {
   transform: rotate(10deg) scale(1.12);
 }
 
-/* card 2 */
+
 .mini-card:nth-child(2) {
   --mini-accent: var(--dark-navy);
   --mini-glow: rgba(16, 25, 47, 0.09);
@@ -3158,7 +3158,7 @@ body {
   transform: rotate(-12deg) scale(1.1);
 }
 
-/* card 3 */
+
 .mini-card:nth-child(3) {
   --mini-accent: #ff7a1a;
   --mini-glow: rgba(255, 122, 26, 0.1);
@@ -3168,7 +3168,7 @@ body {
   transform: translateY(-3px) scale(1.12);
 }
 
-/* card 4 */
+
 .mini-card:nth-child(4) {
   --mini-accent: var(--blue-graphite);
   --mini-glow: rgba(28, 39, 64, 0.1);
@@ -3178,7 +3178,7 @@ body {
   transform: rotate(180deg) scale(1.08);
 }
 
-/* stronger title hover */
+
 .mini-card h3 {
   transition: color 0.28s ease;
 }
@@ -3187,7 +3187,7 @@ body {
   color: var(--mini-accent, var(--carrot-orange));
 }
 
-/* COMPACT SERVICES FLOW */
+
 
 .services-flow {
   position: relative;
@@ -3432,7 +3432,7 @@ body {
   color: var(--carrot-orange);
 }
 
-/* TABLET */
+
 
 @media (max-width: 1100px) {
   .services-flow__grid {
@@ -3449,7 +3449,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 760px) {
   .services-flow {
@@ -3505,7 +3505,7 @@ body {
   }
 }
 
-/* SERVICES FLOW COMPACT ITEMS FIX */
+
 
 .services-flow__item {
   position: relative;
@@ -3571,12 +3571,12 @@ body {
   color: var(--carrot-orange);
 }
 
-/* убираем старые стили цифр, если где-то остались */
+
 .services-flow__item span {
   display: none;
 }
 
-/* MOBILE */
+
 
 @media (max-width: 760px) {
 
@@ -3601,7 +3601,7 @@ body {
   }
 }
 
-/* SERVICES FLOW SIMPLE PHOTO BACKGROUND */
+
 
 .services-flow {
   position: relative;
@@ -3632,20 +3632,20 @@ body {
   z-index: 3;
 }
 
-/* линия остается поверх фото, но под контентом */
+
 .services-flow__line {
   z-index: 1;
   opacity: 0.68;
 }
 
-/* убираем фон с “карточек”, чтобы не было дешево */
+
 .services-flow__item,
 .services-flow__item:nth-child(even),
 .services-flow__item:nth-child(odd) {
   background: transparent;
 }
 
-/* делаем контент чуть ярче на фото */
+
 .services-flow__intro h2,
 .services-flow__item strong {
   color: var(--white);
@@ -3672,7 +3672,7 @@ body {
   backdrop-filter: none;
 }
 
-/* PROCESS ORBIT SECTION */
+
 
 .process-orbit {
   position: relative;
@@ -3821,7 +3821,7 @@ body {
   color: var(--carrot-orange);
 }
 
-/* TABLET */
+
 
 @media (max-width: 1100px) {
   .process-orbit__track {
@@ -3834,7 +3834,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .process-orbit {
@@ -3871,7 +3871,7 @@ body {
   }
 }
 
-/* PROCESS ORBIT COMPACT FIX */
+
 
 .process-orbit {
   padding: 58px 0 62px;
@@ -3925,7 +3925,7 @@ body {
   opacity: 0.3;
 }
 
-/* TABLET */
+
 
 @media (max-width: 1100px) {
   .process-orbit {
@@ -3937,7 +3937,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .process-orbit {
@@ -3973,7 +3973,7 @@ body {
   }
 }
 
-/* FAQ SPLIT SECTION */
+
 
 .faq-split {
   position: relative;
@@ -4110,7 +4110,7 @@ body {
   line-height: 1.6;
 }
 
-/* TABLET */
+
 
 @media (max-width: 860px) {
   .faq-split__grid {
@@ -4119,7 +4119,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .faq-split {
@@ -4151,7 +4151,7 @@ body {
   }
 }
 
-/* WHY CHOOSE INFO CARD HOVERS */
+
 
 .why .info-card {
   position: relative;
@@ -4233,7 +4233,7 @@ body {
   color: var(--why-accent, var(--carrot-orange));
 }
 
-/* разные акценты для каждой карточки */
+
 
 .why .info-card:nth-child(1) {
   --why-accent: var(--carrot-orange);
@@ -4276,7 +4276,7 @@ body {
 }
 
 
-/* POLISHED TESTIMONIALS */
+
 
 .testimonials-polished {
   position: relative;
@@ -4446,7 +4446,7 @@ body {
   font-size: 13px;
 }
 
-/* TABLET */
+
 
 @media (max-width: 980px) {
   .testimonials-polished .testimonial-grid {
@@ -4458,7 +4458,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .testimonials-polished {
@@ -4489,7 +4489,7 @@ body {
   }
 }
 
-/* TESTIMONIALS COMPACT HEIGHT */
+
 
 .testimonials-polished .testimonial-card {
   min-height: 210px;
@@ -4533,7 +4533,7 @@ body {
   font-size: 12.5px;
 }
 
-/* TESTIMONIAL QUOTE BIG OUTSIDE */
+
 
 .testimonials-polished .testimonial-card {
   overflow: visible;
@@ -4569,7 +4569,7 @@ body {
   z-index: 5;
 }
 
-/* CONTACT COMPACT SECTION */
+
 
 .contact-compact {
   position: relative;
@@ -4687,7 +4687,7 @@ body {
   transform: scale(1.06);
 }
 
-/* form */
+
 
 .contact-compact__form {
   padding: 28px;
@@ -4756,7 +4756,7 @@ body {
   justify-content: center;
 }
 
-/* TABLET */
+
 
 @media (max-width: 980px) {
   .contact-compact__grid {
@@ -4774,7 +4774,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 680px) {
   .contact-compact {
@@ -4807,7 +4807,7 @@ body {
   }
 }
 
-/* CONTACT FORM TEXT COLOR FIX */
+
 
 .contact-compact__form,
 .contact-compact__form label,
@@ -4850,7 +4850,7 @@ body {
   color: var(--deep-black);
 }
 
-/* MARKETING ICON STRIP */
+
 
 .marketing-icons-strip {
   position: relative;
@@ -4935,14 +4935,14 @@ body {
   filter: drop-shadow(0 18px 26px rgba(241, 90, 36, 0.28));
 }
 
-/* убираем старый стиль карточек, если он остался */
+
 .marketing-icons-strip article,
 .marketing-icons-strip h3,
 .marketing-icons-strip p {
   display: none;
 }
 
-/* TABLET */
+
 
 @media (max-width: 900px) {
   .marketing-icons-strip__grid {
@@ -4966,7 +4966,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 560px) {
   .marketing-icons-strip {
@@ -4999,7 +4999,7 @@ body {
   }
 }
 
-/* MARKETING ICON STRIP FULL WIDTH */
+
 
 .marketing-icons-strip {
   position: relative;
@@ -5084,14 +5084,14 @@ body {
   filter: drop-shadow(0 18px 26px rgba(241, 90, 36, 0.28));
 }
 
-/* убираем старый стиль, если он остался */
+
 .marketing-icons-strip article,
 .marketing-icons-strip h3,
 .marketing-icons-strip p {
   display: none;
 }
 
-/* TABLET */
+
 
 @media (max-width: 980px) {
   .marketing-icons-strip__grid {
@@ -5115,7 +5115,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 560px) {
   .marketing-icons-strip {
@@ -5148,7 +5148,7 @@ body {
   }
 }
 
-/* CAMPAIGN FEATURES CARD HOVERS */
+
 
 .campaign-features .info-card {
   position: relative;
@@ -5231,7 +5231,7 @@ body {
   color: var(--carrot-orange);
 }
 
-/* CAMPAIGN FEATURES CENTER HEADING */
+
 
 .campaign-features .section-heading {
   width: 100%;
@@ -5250,7 +5250,7 @@ body {
   display: inline;
 }
 
-/* ADVANTAGE CLEAN CTA */
+
 
 .advantage-clean {
   padding: 68px 0 72px;
@@ -5377,7 +5377,7 @@ body {
   }
 }
 
-/* TABLET */
+
 
 @media (max-width: 980px) {
   .advantage-clean .advantage-card {
@@ -5395,7 +5395,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .advantage-clean {
@@ -5427,7 +5427,7 @@ body {
   }
 }
 
-/* ADVANTAGE CTA HOVER RING + SHINE */
+
 
 .advantage-clean .advantage-visual::before {
   transition:
@@ -5481,7 +5481,7 @@ body {
     0 20px 42px rgba(241, 90, 36, 0.14);
 }
 
-/* KEYWORDS INFINITE STRIP */
+
 
 .keywords-strip {
   position: relative;
@@ -5580,7 +5580,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .keywords-strip {
@@ -5608,11 +5608,11 @@ body {
   }
 }
 
-/* CORE FOCUS TABLET + MOBILE REDESIGN */
+
 
 @media (max-width: 1040px) {
 
-  /* скрываем график на планшете и мобилке */
+  
   .core-focus-line__bg-chart {
     display: none !important;
   }
@@ -5732,7 +5732,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 700px) {
   .core-focus-line {
@@ -5791,7 +5791,7 @@ body {
   }
 }
 
-/* CORE FOCUS TABLET + MOBILE COMPACT FIX */
+
 
 @media (max-width: 1040px) {
   .core-focus-row__number {
@@ -5848,7 +5848,7 @@ body {
   }
 }
 
-/* MOBILE COMPACT */
+
 
 @media (max-width: 700px) {
   .core-focus-line {
@@ -5907,7 +5907,7 @@ body {
   }
 }
 
-/* CORE FOCUS TABLET HEIGHT FIX */
+
 
 @media (min-width: 701px) and (max-width: 1040px) {
   .core-focus-line {
@@ -5961,7 +5961,7 @@ body {
   }
 }
 
-/* CORE FOCUS MOBILE ICON OVERLAP FIX */
+
 
 @media (max-width: 700px) {
   .core-focus-row {
@@ -6007,7 +6007,7 @@ body {
   }
 }
 
-/* SERVICES FLOW TABLET REDESIGN */
+
 
 @media (min-width: 761px) and (max-width: 1100px) {
   .services-flow {
@@ -6144,7 +6144,7 @@ body {
   }
 }
 
-/* TESTIMONIALS TABLET COMPACT ROWS */
+
 
 @media (min-width: 701px) and (max-width: 1100px) {
   .testimonials-polished {
@@ -6240,7 +6240,7 @@ body {
   }
 }
 
-/* TESTIMONIALS TABLET FIRST QUOTE FIX */
+
 
 @media (min-width: 701px) and (max-width: 1100px) {
 
@@ -6282,7 +6282,7 @@ body {
   }
 }
 
-/* PROCESS ORBIT TABLET COMPACT */
+
 
 @media (min-width: 701px) and (max-width: 1100px) {
   .process-orbit {
@@ -6364,7 +6364,7 @@ body {
   }
 }
 
-/* HERO CONTENT CENTER ON TABLET + MOBILE */
+
 
 @media (max-width: 1100px) {
   .klm-hero-wave__inner {
@@ -6422,7 +6422,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .klm-hero-wave__content {
@@ -6465,7 +6465,7 @@ body {
   }
 }
 
-/* HERO TABLET TEXT BIGGER */
+
 
 @media (min-width: 701px) and (max-width: 1100px) {
   .klm-hero-wave__content h1 {
@@ -6496,7 +6496,7 @@ body {
   }
 }
 
-/* PROCESS ORBIT MOBILE COMPACT */
+
 
 @media (max-width: 700px) {
   .process-orbit {
@@ -6576,7 +6576,7 @@ body {
   }
 }
 
-/* ADVANTAGE CTA COMPACT FIX */
+
 
 .advantage-clean {
   padding: 52px 0 56px;
@@ -6626,7 +6626,7 @@ body {
   font-size: 13px;
 }
 
-/* TABLET */
+
 
 @media (min-width: 701px) and (max-width: 980px) {
   .advantage-clean {
@@ -6665,7 +6665,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 700px) {
   .advantage-clean {
@@ -6733,7 +6733,7 @@ body {
   }
 }
 
-/* MOBILE MENU + BURGER FIX FOR ALL PAGES */
+
 
 @media (max-width: 1180px) {
   .mobile-menu {
@@ -6818,7 +6818,7 @@ body {
     border-color: var(--carrot-orange);
   }
 
-  /* BURGER BUTTON */
+  
   .burger-btn {
     position: relative;
     width: 46px;
@@ -6867,7 +6867,7 @@ body {
   }
 }
 
-/* SMALL MOBILE */
+
 
 @media (max-width: 480px) {
   .mobile-menu-panel {
@@ -6901,7 +6901,7 @@ body {
   }
 }
 
-/* PROCESS SECTION PHOTO BACKGROUND */
+
 
 .process-orbit {
   position: relative;
@@ -6962,7 +6962,7 @@ body {
   color: rgba(255, 255, 255, 0.74);
 }
 
-/* HEADER INTERMEDIATE WIDTH FIX */
+
 
 @media (min-width: 901px) and (max-width: 1180px) {
   .site-header {

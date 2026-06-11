@@ -193,7 +193,7 @@ h2 span {
   transform: translateY(-2px);
 }
 
-/* HEADER */
+
 
 .site-header {
   position: sticky;
@@ -348,7 +348,7 @@ h2 span {
   border-radius: 999px;
 }
 
-/* MOBILE MENU */
+
 
 .mobile-menu {
   position: fixed;
@@ -464,7 +464,7 @@ h2 span {
   color: var(--carrot-orange);
 }
 
-/* SERVICE HERO */
+
 
 .service-hero {
   position: relative;
@@ -507,7 +507,7 @@ h2 span {
   flex-wrap: wrap;
 }
 
-/* OVERVIEW */
+
 
 .service-overview {
   padding: 92px 0 56px;
@@ -527,7 +527,7 @@ h2 span {
   font-size: 17px;
 }
 
-/* CARDS */
+
 
 .includes,
 .benefits,
@@ -587,7 +587,7 @@ h2 span {
   gap: 18px;
 }
 
-/* PROCESS */
+
 
 .service-process {
   padding: 92px 0;
@@ -643,7 +643,7 @@ h2 span {
   font-size: 14px;
 }
 
-/* KEY FEATURES */
+
 
 .feature-list {
   display: grid;
@@ -676,7 +676,7 @@ h2 span {
   font-weight: 800;
 }
 
-/* SERVICE CTA */
+
 
 .service-cta {
   padding: 34px 0 92px;
@@ -702,7 +702,7 @@ h2 span {
   color: var(--light-grey);
 }
 
-/* RELATED SERVICES */
+
 
 .related-services {
   padding: 92px 0;
@@ -759,7 +759,7 @@ h2 span {
   font-weight: 800;
 }
 
-/* FAQ */
+
 
 .faq-list {
   max-width: 880px;
@@ -818,7 +818,7 @@ h2 span {
   transform: rotate(45deg);
 }
 
-/* FINAL CTA */
+
 
 .final-cta {
   padding: 92px 0;
@@ -850,7 +850,7 @@ h2 span {
   gap: 12px;
 }
 
-/* FOOTER */
+
 
 .site-footer {
   border-top: 1px solid var(--border-light);
@@ -929,7 +929,7 @@ h2 span {
   font-size: 13px;
 }
 
-/* COOKIE */
+
 
 .cookie-banner {
   position: fixed;
@@ -991,7 +991,7 @@ h2 span {
   gap: 10px;
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 1180px) {
   .desktop-nav {
@@ -1202,7 +1202,7 @@ h2 span {
   }
 }
 
-/* FIXED HEADER */
+
 
 .site-header {
   position: fixed;
@@ -1274,7 +1274,7 @@ body {
   }
 }
 
-/* FAQ SPLIT SECTION */
+
 
 .faq-split {
   position: relative;
@@ -1411,7 +1411,7 @@ body {
   line-height: 1.6;
 }
 
-/* TABLET */
+
 
 @media (max-width: 860px) {
   .faq-split__grid {
@@ -1420,7 +1420,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .faq-split {
@@ -1452,7 +1452,7 @@ body {
   }
 }
 
-/* MOBILE MENU + BURGER FIX FOR ALL PAGES */
+
 
 @media (max-width: 1180px) {
   .mobile-menu {
@@ -1537,7 +1537,7 @@ body {
     border-color: var(--carrot-orange);
   }
 
-  /* BURGER BUTTON */
+  
   .burger-btn {
     position: relative;
     width: 46px;
@@ -1586,7 +1586,7 @@ body {
   }
 }
 
-/* SMALL MOBILE */
+
 
 @media (max-width: 480px) {
   .mobile-menu-panel {
@@ -1620,7 +1620,7 @@ body {
   }
 }
 
-/* SERVICE HERO WAVE LIKE HOME HERO */
+
 
 .service-hero {
   display: none;
@@ -1642,7 +1642,7 @@ body {
     linear-gradient(135deg, var(--dark-navy) 0%, var(--deep-black) 55%, var(--soft-black) 100%);
 }
 
-/* BACKGROUND IMAGES */
+
 .service-hero-wave--google-ads {
   --service-hero-image: url("../images/services/google-ads-hero.jpg");
 }
@@ -1881,7 +1881,7 @@ body {
   display: block;
 }
 
-/* TABLET */
+
 
 @media (max-width: 1100px) {
   .service-hero-wave {
@@ -1948,7 +1948,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 700px) {
   .service-hero-wave {
@@ -2014,7 +2014,7 @@ body {
   }
 }
 
-/* SERVICE OVERVIEW BLACK LINE FIX */
+
 
 .service-overview {
   position: relative;
@@ -2040,7 +2040,7 @@ body {
   margin-top: 0;
 }
 
-/* если линия сверху из-за волны hero */
+
 .service-hero-wave__bottom {
   bottom: -3px;
   height: 124px;
@@ -2050,7 +2050,7 @@ body {
   display: block;
 }
 
-/* SERVICE OVERVIEW INTERESTING LINE VERSION */
+
 
 .service-overview-line {
   position: relative;
@@ -2182,7 +2182,7 @@ body {
   border-bottom: 0;
 }
 
-/* TABLET */
+
 
 @media (max-width: 920px) {
   .service-overview-line {
@@ -2203,7 +2203,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .service-overview-line {
@@ -2247,7 +2247,7 @@ body {
   }
 }
 
-/* OVERVIEW FLOW ONE LINE + TEXT HOVER LINES */
+
 
 .service-overview-line .overview-flow {
   flex-wrap: nowrap;
@@ -2289,7 +2289,7 @@ body {
   flex: 0 0 auto;
 }
 
-/* right text block lower */
+
 
 .service-overview-line .overview-text {
   padding-top: 56px;
@@ -2347,7 +2347,7 @@ body {
   border-bottom: 1px solid rgba(10, 7, 16, 0.08);
 }
 
-/* TABLET */
+
 
 @media (max-width: 920px) {
   .service-overview-line .overview-flow {
@@ -2366,7 +2366,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .service-overview-line .overview-flow {
@@ -2402,7 +2402,7 @@ body {
   }
 }
 
-/* BIG DARK WORDS TICKER */
+
 
 .big-words-ticker {
   position: relative;
@@ -2520,7 +2520,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 700px) {
   .big-words-ticker {
@@ -2558,7 +2558,7 @@ body {
   }
 }
 
-/* BENEFITS BLOB PHOTO SECTION */
+
 
 .benefits-blob {
   position: relative;
@@ -2659,7 +2659,7 @@ body {
   line-height: 1.65;
 }
 
-/* reset old cards into clean rows */
+
 
 .benefits-blob .benefit-grid {
   display: grid;
@@ -2739,7 +2739,7 @@ body {
   line-height: 1.55;
 }
 
-/* TABLET */
+
 
 @media (max-width: 980px) {
   .benefits-blob {
@@ -2765,7 +2765,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .benefits-blob {
@@ -2827,27 +2827,27 @@ body {
   }
 }
 
-/* BENEFITS BLOB TOP PADDING SMALLER */
+
 
 .benefits-blob {
   padding-top: 36px;
 }
 
-/* TABLET */
+
 @media (max-width: 980px) {
   .benefits-blob {
     padding-top: 32px;
   }
 }
 
-/* MOBILE */
+
 @media (max-width: 640px) {
   .benefits-blob {
     padding-top: 28px;
   }
 }
 
-/* BENEFITS BLOB PHOTO BIGGER */
+
 
 .benefits-blob__visual {
   min-height: 540px;
@@ -2858,7 +2858,7 @@ body {
   height: 520px;
 }
 
-/* TABLET */
+
 @media (max-width: 980px) {
   .benefits-blob__visual {
     min-height: 460px;
@@ -2870,7 +2870,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 @media (max-width: 640px) {
   .benefits-blob__visual {
     min-height: 350px;
@@ -2883,7 +2883,7 @@ body {
   }
 }
 
-/* INCLUDES CARDS FIX — ICONS BACK + SOFT HOVERS */
+
 
 .includes .info-card {
   --card-accent: var(--carrot-orange);
@@ -2899,7 +2899,7 @@ body {
     box-shadow 0.28s ease;
 }
 
-/* calm random accents */
+
 .includes .info-card:nth-child(1) {
   --card-accent: #C94A43;
   --card-bg: rgba(201, 74, 67, 0.07);
@@ -2930,7 +2930,7 @@ body {
   --card-bg: rgba(16, 25, 47, 0.07);
 }
 
-/* soft color corner */
+
 .includes .info-card::before {
   content: "";
   position: absolute;
@@ -2944,7 +2944,7 @@ body {
   pointer-events: none;
 }
 
-/* hover underline */
+
 .includes .info-card::after {
   content: "";
   position: absolute;
@@ -2960,7 +2960,7 @@ body {
   pointer-events: none;
 }
 
-/* IMPORTANT: icon back to original place */
+
 .includes .info-card>i,
 .includes .info-card>svg {
   position: absolute !important;
@@ -3004,7 +3004,7 @@ body {
   filter: drop-shadow(0 8px 14px var(--card-bg));
 }
 
-/* BENEFITS BLOB TOP LINE FIX */
+
 
 .benefits-blob {
   position: relative;
@@ -3019,7 +3019,7 @@ body {
     linear-gradient(180deg, var(--soft-white), #ffffff) !important;
 }
 
-/* перекрывает тонкую линию сверху */
+
 .benefits-blob::before {
   content: "";
   position: absolute;
@@ -3032,13 +3032,13 @@ body {
   pointer-events: none;
 }
 
-/* чтобы контент был выше перекрывающей полоски */
+
 .benefits-blob>.container {
   position: relative;
   z-index: 2;
 }
 
-/* если линия идет от предыдущей секции */
+
 .includes+.benefits-blob,
 .service-overview+.benefits-blob,
 .key-features+.benefits-blob,
@@ -3046,7 +3046,7 @@ body {
   margin-top: -2px;
 }
 
-/* SERVICE PROCESS ROUND HORIZONTAL */
+
 
 .service-process-round {
   position: relative;
@@ -3161,7 +3161,7 @@ body {
   transition: transform 0.32s ease;
 }
 
-/* icons back from old absolute styles */
+
 .service-process-round .process-card>i,
 .service-process-round .process-card>svg {
   position: relative !important;
@@ -3230,7 +3230,7 @@ body {
   box-shadow: 0 14px 30px rgba(241, 90, 36, 0.28);
 }
 
-/* TABLET */
+
 
 @media (max-width: 980px) {
   .service-process-round {
@@ -3256,7 +3256,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .service-process-round {
@@ -3288,7 +3288,7 @@ body {
   }
 }
 
-/* SERVICE ICON STRIP */
+
 
 .service-icon-strip {
   position: relative;
@@ -3451,7 +3451,7 @@ body {
   }
 }
 
-/* TABLET */
+
 
 @media (max-width: 980px) {
   .service-icon-strip {
@@ -3473,7 +3473,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .service-icon-strip {
@@ -3506,7 +3506,7 @@ body {
   }
 }
 
-/* SERVICE ICON STRIP ORANGE VERSION */
+
 
 .service-icon-strip--orange {
   background:
@@ -3573,12 +3573,12 @@ body {
     drop-shadow(0 0 18px rgba(255, 255, 255, 0.45)) drop-shadow(0 18px 28px rgba(10, 7, 16, 0.28));
 }
 
-/* чуть темнее hover-пятно при наведении */
+
 .service-icon-strip--orange .service-icon-strip__item:hover {
   transform: translateY(-6px);
 }
 
-/* RELATED SERVICES WOW CONSTELLATION */
+
 
 .related-services-wow {
   position: relative;
@@ -3835,7 +3835,7 @@ body {
   color: var(--carrot-orange);
 }
 
-/* TABLET */
+
 
 @media (max-width: 1100px) {
   .related-orbit-grid {
@@ -3867,7 +3867,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .related-services-wow {
@@ -3897,20 +3897,20 @@ body {
   }
 }
 
-/* RELATED SERVICES — REMOVE NUMBERS, ICONS INSTEAD */
+
 
 .related-orbit-card::before {
   display: none !important;
   content: none !important;
 }
 
-/* делаем место под большую иконку сверху */
+
 .related-orbit-card {
   justify-content: center;
   padding: 82px 24px 28px;
 }
 
-/* иконка теперь вместо цифры */
+
 .related-orbit-card>i,
 .related-orbit-card>svg {
   position: absolute !important;
@@ -3929,7 +3929,7 @@ body {
     stroke-width 0.38s ease;
 }
 
-/* мягкое свечение под иконкой */
+
 .related-orbit-card .related-icon-glow {
   display: none;
 }
@@ -3952,12 +3952,12 @@ body {
     drop-shadow(0 0 18px rgba(241, 90, 36, 0.55)) drop-shadow(0 16px 26px rgba(0, 0, 0, 0.32));
 }
 
-/* чтобы старая hover-анимация не пыталась двигать цифры */
+
 .related-orbit-card:hover::before {
   display: none !important;
 }
 
-/* TABLET */
+
 @media (max-width: 1100px) {
   .related-orbit-card {
     padding-top: 82px;
@@ -3971,7 +3971,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 @media (max-width: 640px) {
   .related-orbit-card {
     padding: 86px 24px 30px;
@@ -3985,7 +3985,7 @@ body {
   }
 }
 
-/* FINAL CTA LIGHT SECTION + DARK SHINE CARD */
+
 
 .final-cta-shine {
   position: relative;
@@ -4024,7 +4024,7 @@ body {
     inset 0 0 0 1px rgba(255, 255, 255, 0.035);
 }
 
-/* блеск на карточке */
+
 .final-cta-shine .final-cta-grid::before {
   content: "";
   position: absolute;
@@ -4042,7 +4042,7 @@ body {
   pointer-events: none;
 }
 
-/* мягкая декоративная сетка внутри карточки */
+
 .final-cta-shine .final-cta-grid::after {
   content: "";
   position: absolute;
@@ -4112,7 +4112,7 @@ body {
   border-color: var(--white);
 }
 
-/* TABLET */
+
 
 @media (max-width: 900px) {
   .final-cta-shine {
@@ -4125,7 +4125,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .final-cta-shine {
@@ -4147,7 +4147,7 @@ body {
   }
 }
 
-/* KEY FEATURES COMPACT SPLIT */
+
 
 .key-features-compact {
   padding: 46px 0 54px;
@@ -4282,13 +4282,13 @@ body {
   transform: scale(1.05);
 }
 
-/* убрать влияние прошлого варианта */
+
 .key-features-split__photo-card img,
 .key-features-split__photo-card {
   min-height: unset;
 }
 
-/* TABLET */
+
 
 @media (max-width: 980px) {
   .key-features-compact__grid {
@@ -4302,7 +4302,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .key-features-compact {
@@ -4326,7 +4326,7 @@ body {
   }
 }
 
-/* KEY FEATURES WIDE BUT SAME HEIGHT */
+
 
 .key-features-compact>.container {
   width: min(94vw, 1480px);
@@ -4358,7 +4358,7 @@ body {
   font-size: 12.8px;
 }
 
-/* TABLET */
+
 @media (max-width: 980px) {
   .key-features-compact>.container {
     width: min(92vw, 760px);
@@ -4384,7 +4384,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 @media (max-width: 640px) {
   .key-features-compact>.container {
     width: min(92vw, 100%);
@@ -4406,7 +4406,7 @@ body {
   }
 }
 
-/* KEY FEATURES ARTICLES HOVER */
+
 
 .key-features-compact .feature-list article {
   position: relative;
@@ -4478,7 +4478,7 @@ body {
   color: var(--white);
 }
 
-/* MOBILE */
+
 @media (max-width: 640px) {
   .key-features-compact .feature-list article {
     padding: 9px 10px;
@@ -4490,7 +4490,7 @@ body {
   }
 }
 
-/* SERVICE OVERVIEW RESPONSIVE FIX */
+
 
 .service-overview-line {
   overflow: hidden;
@@ -4511,7 +4511,7 @@ body {
   min-width: 0;
 }
 
-/* TABLET */
+
 @media (max-width: 980px) {
   .service-overview-line {
     padding: 40px 0 52px;
@@ -4578,7 +4578,7 @@ body {
   }
 }
 
-/* SMALL TABLET + MOBILE */
+
 @media (max-width: 700px) {
   .service-overview-line {
     padding: 34px 0 44px;
@@ -4629,7 +4629,7 @@ body {
   }
 }
 
-/* VERY SMALL MOBILE */
+
 @media (max-width: 390px) {
   .service-overview-line .overview-flow {
     grid-template-columns: 1fr;
@@ -4641,7 +4641,7 @@ body {
   }
 }
 
-/* SERVICE PROCESS TABLET + MOBILE TIMELINE VERSION */
+
 
 @media (max-width: 980px) {
   .service-process-round {
@@ -4834,7 +4834,7 @@ body {
   }
 }
 
-/* MOBILE */
+
 
 @media (max-width: 640px) {
   .service-process-round {
@@ -4908,7 +4908,7 @@ body {
   }
 }
 
-/* VERY SMALL MOBILE */
+
 
 @media (max-width: 390px) {
   .service-process-round .process-card {
@@ -4924,7 +4924,7 @@ body {
   }
 }
 
-/* HIDE PROCESS NUMBERS ON TABLET + MOBILE */
+
 
 @media (max-width: 980px) {
   .service-process-round .process-card::before {
@@ -4947,7 +4947,7 @@ body {
   }
 }
 
-/* RELATED SERVICES MOBILE — SUPER COMPACT SCROLL STRIP */
+
 
 @media (max-width: 640px) {
   .related-services-wow {
@@ -5092,7 +5092,7 @@ body {
   }
 }
 
-/* RELATED SERVICES MOBILE — LOWER CARDS + ICON RIGHT */
+
 
 @media (max-width: 640px) {
 
@@ -5137,7 +5137,7 @@ body {
   }
 }
 
-/* RELATED SERVICES MOBILE — SMALL CIRCLES WITH CENTER TEXT */
+
 
 @media (max-width: 640px) {
   .related-services-wow {
@@ -5244,7 +5244,7 @@ body {
   }
 }
 
-/* VERY SMALL MOBILE */
+
 @media (max-width: 390px) {
   .related-orbit-grid {
     max-width: 320px !important;
@@ -5257,7 +5257,7 @@ body {
   }
 }
 
-/* RELATED SERVICES MOBILE — CIRCLES IN ONE ROW */
+
 
 @media (max-width: 640px) {
   .related-orbit-grid {
@@ -5341,7 +5341,7 @@ body {
   }
 }
 
-/* HEADER INTERMEDIATE WIDTH FIX */
+
 
 @media (min-width: 901px) and (max-width: 1180px) {
   .site-header {

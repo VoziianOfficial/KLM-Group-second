@@ -150,7 +150,7 @@ h2 span {
   transform: translateY(-2px);
 }
 
-/* HEADER */
+
 
 .site-header {
   position: sticky;
@@ -305,7 +305,7 @@ h2 span {
   border-radius: 999px;
 }
 
-/* MOBILE MENU */
+
 
 .mobile-menu {
   position: fixed;
@@ -421,7 +421,7 @@ h2 span {
   color: var(--carrot-orange);
 }
 
-/* POLICY HERO */
+
 
 .policy-hero {
   position: relative;
@@ -469,7 +469,7 @@ h2 span {
   font-size: 18px;
 }
 
-/* POLICY CONTENT */
+
 
 .policy-content-section {
   padding: 82px 0;
@@ -625,7 +625,7 @@ h2 span {
   color: var(--carrot-orange);
 }
 
-/* FOOTER */
+
 
 .site-footer {
   border-top: 1px solid var(--border-light);
@@ -704,7 +704,7 @@ h2 span {
   font-size: 13px;
 }
 
-/* COOKIE */
+
 
 .cookie-banner {
   position: fixed;
@@ -767,7 +767,7 @@ h2 span {
   gap: 10px;
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 1180px) {
   .desktop-nav {
@@ -929,7 +929,7 @@ h2 span {
     display: inline-flex;
   }
 }
-/* FIXED HEADER */
+
 
 .site-header {
   position: fixed;
@@ -1001,7 +1001,7 @@ body {
   }
 }
 
-/* MOBILE MENU + BURGER FIX FOR ALL PAGES */
+
 
 @media (max-width: 1180px) {
   .mobile-menu {
@@ -1086,7 +1086,7 @@ body {
     border-color: var(--carrot-orange);
   }
 
-  /* BURGER BUTTON */
+  
   .burger-btn {
     position: relative;
     width: 46px;
@@ -1135,7 +1135,7 @@ body {
   }
 }
 
-/* SMALL MOBILE */
+
 
 @media (max-width: 480px) {
   .mobile-menu-panel {
@@ -1169,9 +1169,9 @@ body {
   }
 }
 
-/* JUICY LEGAL PAGE UPGRADE */
 
-/* HERO */
+
+
 
 .policy-hero {
   position: relative;
@@ -1265,7 +1265,7 @@ body {
   line-height: 1.65;
 }
 
-/* LIGHT BODY BACKGROUND */
+
 
 .policy-content-section {
   position: relative;
@@ -1310,7 +1310,7 @@ body {
   gap: 28px;
 }
 
-/* SIDEBAR JUICY */
+
 
 .policy-sidebar {
   top: 116px;
@@ -1381,7 +1381,7 @@ body {
   transform: scaleX(1);
 }
 
-/* MAIN POLICY CARD */
+
 
 .policy-card {
   position: relative;
@@ -1466,7 +1466,7 @@ body {
   box-shadow: 0 12px 26px rgba(241, 90, 36, 0.12);
 }
 
-/* SECTIONS AS ACTIVE BLOCKS */
+
 
 .policy-card section {
   position: relative;
@@ -1561,7 +1561,7 @@ body {
   color: var(--deep-black);
 }
 
-/* CONTACT BOX */
+
 
 .policy-contact-box {
   position: relative;
@@ -1601,7 +1601,7 @@ body {
   color: var(--carrot-orange);
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 920px) {
   .policy-layout {
@@ -1678,7 +1678,7 @@ body {
   }
 }
 
-/* POLICY HERO TABLET + MOBILE CENTER FIX */
+
 
 @media (max-width: 920px) {
   .policy-hero {
@@ -1749,7 +1749,7 @@ body {
   }
 }
 
-/* HEADER INTERMEDIATE WIDTH FIX */
+
 
 @media (min-width: 901px) and (max-width: 1180px) {
   .site-header {

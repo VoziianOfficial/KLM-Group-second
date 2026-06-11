@@ -12,16 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const COOKIE_KEY = "late_cookie_preference";
 
-  /**
-   * Lucide icons
-   */
+  
   if (window.lucide) {
     window.lucide.createIcons();
   }
 
-  /**
-   * Sticky header state on scroll
-   */
+  
   const updateHeaderState = () => {
     if (!header) return;
 
@@ -35,9 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
   updateHeaderState();
   window.addEventListener("scroll", updateHeaderState, { passive: true });
 
-  /**
-   * Mobile menu
-   */
+  
   const openMobileMenu = () => {
     if (!mobileMenu) return;
 
@@ -74,9 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  /**
-   * Smooth scroll for same-page anchors
-   */
+  
   const samePageLinks = document.querySelectorAll('a[href^="#"]');
 
   samePageLinks.forEach((link) => {
@@ -102,9 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /**
-   * FAQ accordion
-   */
+  
   faqItems.forEach((item) => {
     const question = item.querySelector(".faq-question");
 
@@ -127,9 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /**
-   * Cookie banner logic
-   */
+  
   const savedCookiePreference = localStorage.getItem(COOKIE_KEY);
 
   if (!savedCookiePreference && cookieBanner) {
@@ -160,9 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /**
-   * No horizontal scroll protection
-   */
+  
   const preventHorizontalScroll = () => {
     document.documentElement.style.overflowX = "hidden";
     document.body.style.overflowX = "hidden";
