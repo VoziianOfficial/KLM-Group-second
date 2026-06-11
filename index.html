@@ -824,94 +824,109 @@
     </div>
   </section>
 
-    <!-- CONTACT -->
-    <section class="contact section-dark" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-content">
-          <p class="section-label">Contact KLM Group</p>
+<!-- CONTACT -->
+<section class="contact contact-compact section-dark" id="contact">
+  <div class="contact-compact__glow" aria-hidden="true"></div>
 
-          <h2>
-            Get <span>In Touch</span>
-          </h2>
+  <div class="container contact-compact__grid">
+    <div class="contact-compact__left">
+      <div class="contact-compact__card">
+        <p class="section-label">Contact KLM Group</p>
+
+        <h2>
+          Let’s Build Your
+          <span>Growth Direction</span>
+        </h2>
+
+        <p>
+          Tell us what you need, and we’ll help define the next clear step for your digital growth.
+        </p>
+
+        <div class="contact-details contact-compact__details">
+          <a href="mailto:support@klmgroupads.com">
+            <i data-lucide="mail"></i>
+            support@klmgroupads.com
+          </a>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=Radvansk%C3%A1%201%2C%20Bratislava%20%E2%80%93%20mestsk%C3%A1%20%C4%8Das%C5%A5%20Star%C3%A9%20Mesto%2C%20811%2001%2C%20Slovakia"
+            target="_blank" rel="noopener noreferrer">
+            <i data-lucide="map-pin"></i>
+            Radvanská 1, Bratislava, Slovakia
+          </a>
 
           <p>
-            Have a project in mind? Let’s talk and build a clearer digital growth direction
-            for your business.
+            <i data-lucide="clock-3"></i>
+            Mon - Fri, 9:00 AM - 6:00 PM
           </p>
+        </div>
+      </div>
 
-          <div class="contact-details">
-            <a href="mailto:support@klmgroupads.com">
-              <i data-lucide="mail"></i>
-              support@klmgroupads.com
-            </a>
+      <div class="contact-compact__photo">
+        <img src="assets/images/home/contact-photo.jpg" alt="KLM Group team discussing digital marketing strategy" />
+      </div>
+    </div>
 
-            <a href="https://www.google.com/maps/search/?api=1&query=Radvansk%C3%A1%201%2C%20Bratislava%20%E2%80%93%20mestsk%C3%A1%20%C4%8Das%C5%A5%20Star%C3%A9%20Mesto%2C%20811%2001%2C%20Slovakia"
-              target="_blank" rel="noopener noreferrer">
-              <i data-lucide="map-pin"></i>
-              Radvanská 1, Bratislava – mestská časť Staré Mesto, 811 01, Slovakia
-            </a>
+    <form class="contact-form contact-compact__form" id="contactForm">
+      <div class="contact-compact__form-head">
+        <h3>Send a Request</h3>
+        <p>We’ll review your details and contact you with the next step.</p>
+      </div>
 
-            <p>
-              <i data-lucide="clock-3"></i>
-              Mon - Fri, 9:00 AM - 6:00 PM
-            </p>
-          </div>
+      <div class="contact-compact__fields">
+        <div class="form-row">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
         </div>
 
-        <form class="contact-form" id="contactForm">
-          <div class="form-row">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name" required />
-          </div>
+        <div class="form-row">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
 
-          <div class="form-row">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" required />
-          </div>
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+        </div>
 
-          <div class="form-row">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
-          </div>
-
-          <div class="form-row">
-            <label for="service">Selected Service</label>
-            <select id="service" name="service" required>
-              <option value="">Choose a service</option>
-              <option value="Google Ads">Google Ads</option>
-              <option value="SEO Optimization">SEO Optimization</option>
-              <option value="Social Media Marketing">Social Media Marketing</option>
-              <option value="Web Design">Web Design</option>
-              <option value="Conversion Boost">Conversion Boost</option>
-              <option value="Local SEO">Local SEO</option>
-            </select>
-          </div>
-
-          <div class="form-row">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" placeholder="Tell us about your project" required></textarea>
-          </div>
-
-          <label class="custom-checkbox">
-            <input type="checkbox" id="privacyAgreement" required />
-            <span class="checkbox-box"></span>
-            <span>
-              I agree to the
-              <a href="privacy-policy.html">Privacy Policy</a>
-              and
-              <a href="terms-of-service.html">Terms of Service</a>.
-            </span>
-          </label>
-
-          <button type="submit" class="btn btn-primary form-submit">
-            Send Message
-            <i data-lucide="arrow-right"></i>
-          </button>
-
-          <p class="form-message" id="formMessage" aria-live="polite"></p>
-        </form>
+        <div class="form-row">
+          <label for="service">Selected Service</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service</option>
+            <option value="Google Ads">Google Ads</option>
+            <option value="SEO Optimization">SEO Optimization</option>
+            <option value="Social Media Marketing">Social Media Marketing</option>
+            <option value="Web Design">Web Design</option>
+            <option value="Conversion Boost">Conversion Boost</option>
+            <option value="Local SEO">Local SEO</option>
+          </select>
+        </div>
       </div>
-    </section>
+
+      <div class="form-row">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Tell us about your project" required></textarea>
+      </div>
+
+      <label class="custom-checkbox">
+        <input type="checkbox" id="privacyAgreement" required />
+        <span class="checkbox-box"></span>
+        <span>
+          I agree to the
+          <a href="privacy-policy.html">Privacy Policy</a>
+          and
+          <a href="terms-of-service.html">Terms of Service</a>.
+        </span>
+      </label>
+
+      <button type="submit" class="btn btn-primary form-submit">
+        Send Message
+        <i data-lucide="arrow-right"></i>
+      </button>
+
+      <p class="form-message" id="formMessage" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
   </main>
 
   <!-- FOOTER -->
