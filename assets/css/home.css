@@ -4150,3 +4150,127 @@ body {
     font-size: 13.5px;
   }
 }
+
+/* WHY CHOOSE INFO CARD HOVERS */
+
+.why .info-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.why .info-card::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 0;
+  height: 3px;
+  border-radius: 999px 999px 0 0;
+  background: var(--why-accent, var(--carrot-orange));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.why .info-card::after {
+  content: "";
+  position: absolute;
+  right: -52px;
+  top: -52px;
+  z-index: -1;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--why-glow, rgba(241, 90, 36, 0.1));
+  opacity: 0;
+  transform: scale(0.7);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.why .info-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(241, 90, 36, 0.3);
+  box-shadow: 0 26px 56px rgba(16, 25, 47, 0.14);
+}
+
+.why .info-card:hover::before {
+  transform: scaleX(1);
+}
+
+.why .info-card:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.why .info-card>i,
+.why .info-card>svg {
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.why .info-card:hover>i,
+.why .info-card:hover>svg {
+  color: var(--why-accent, var(--carrot-orange));
+  transform: translateY(-3px) scale(1.1);
+}
+
+.why .info-card h3 {
+  transition: color 0.3s ease;
+}
+
+.why .info-card:hover h3 {
+  color: var(--why-accent, var(--carrot-orange));
+}
+
+/* разные акценты для каждой карточки */
+
+.why .info-card:nth-child(1) {
+  --why-accent: var(--carrot-orange);
+  --why-glow: rgba(241, 90, 36, 0.12);
+}
+
+.why .info-card:nth-child(1):hover>i,
+.why .info-card:nth-child(1):hover>svg {
+  transform: translateY(-3px) rotate(8deg) scale(1.12);
+}
+
+.why .info-card:nth-child(2) {
+  --why-accent: #ff7a1a;
+  --why-glow: rgba(255, 122, 26, 0.11);
+}
+
+.why .info-card:nth-child(2):hover>i,
+.why .info-card:nth-child(2):hover>svg {
+  transform: translateY(-3px) rotate(-8deg) scale(1.1);
+}
+
+.why .info-card:nth-child(3) {
+  --why-accent: var(--dark-navy);
+  --why-glow: rgba(16, 25, 47, 0.1);
+}
+
+.why .info-card:nth-child(3):hover>i,
+.why .info-card:nth-child(3):hover>svg {
+  transform: translateY(-3px) scale(1.12);
+}
+
+.why .info-card:nth-child(4) {
+  --why-accent: var(--blue-graphite);
+  --why-glow: rgba(28, 39, 64, 0.1);
+}
+
+.why .info-card:nth-child(4):hover>i,
+.why .info-card:nth-child(4):hover>svg {
+  transform: translateY(-3px) rotate(180deg) scale(1.08);
+}
