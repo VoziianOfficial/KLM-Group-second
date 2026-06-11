@@ -3287,3 +3287,293 @@ body {
     font-size: 12.5px;
   }
 }
+
+/* SERVICE ICON STRIP */
+
+.service-icon-strip {
+  position: relative;
+  padding: 54px 0;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 12% 50%, rgba(241, 90, 36, 0.18), transparent 28%),
+    radial-gradient(circle at 88% 20%, rgba(255, 255, 255, 0.06), transparent 24%),
+    linear-gradient(135deg, var(--deep-black), var(--dark-navy));
+}
+
+.service-icon-strip::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  opacity: 0.26;
+  mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent);
+  pointer-events: none;
+}
+
+.service-icon-strip::after {
+  content: "";
+  position: absolute;
+  left: -120px;
+  top: 50%;
+  z-index: 1;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: rgba(241, 90, 36, 0.12);
+  filter: blur(20px);
+  animation: serviceIconGlowMove 12s linear infinite;
+  pointer-events: none;
+}
+
+.service-icon-strip__line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+  height: 1px;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(241, 90, 36, 0.45),
+      rgba(255, 255, 255, 0.2),
+      rgba(241, 90, 36, 0.45),
+      transparent);
+  pointer-events: none;
+}
+
+.service-icon-strip__inner {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: center;
+}
+
+.service-icon-strip__item {
+  position: relative;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.46);
+  text-decoration: none;
+  background: transparent !important;
+  border: 0;
+  overflow: visible;
+}
+
+.service-icon-strip__item::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  border: 1px solid rgba(241, 90, 36, 0.2);
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.service-icon-strip__item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  width: 64px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, var(--carrot-orange), transparent);
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.35s ease;
+}
+
+.service-icon-strip__item:nth-child(odd) {
+  transform: translateY(-14px);
+}
+
+.service-icon-strip__item:nth-child(even) {
+  transform: translateY(14px);
+}
+
+.service-icon-strip__item>i,
+.service-icon-strip__item>svg {
+  width: clamp(58px, 7vw, 104px) !important;
+  height: clamp(58px, 7vw, 104px) !important;
+  stroke-width: 1.35;
+  color: currentColor;
+  transition:
+    transform 0.35s ease,
+    color 0.35s ease,
+    filter 0.35s ease,
+    stroke-width 0.35s ease;
+}
+
+.service-icon-strip__item:hover {
+  color: var(--carrot-orange);
+}
+
+.service-icon-strip__item:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  border-color: rgba(241, 90, 36, 0.42);
+}
+
+.service-icon-strip__item:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.service-icon-strip__item:hover>i,
+.service-icon-strip__item:hover>svg {
+  transform: translateY(-8px) rotate(-7deg) scale(1.08);
+  stroke-width: 1.8;
+  filter:
+    drop-shadow(0 0 18px rgba(241, 90, 36, 0.45)) drop-shadow(0 18px 28px rgba(0, 0, 0, 0.32));
+}
+
+@keyframes serviceIconGlowMove {
+  from {
+    transform: translateX(0) translateY(-50%);
+  }
+
+  to {
+    transform: translateX(calc(100vw + 240px)) translateY(-50%);
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 980px) {
+  .service-icon-strip {
+    padding: 46px 0;
+  }
+
+  .service-icon-strip__inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 18px;
+  }
+
+  .service-icon-strip__item {
+    min-height: 128px;
+  }
+
+  .service-icon-strip__item:nth-child(odd),
+  .service-icon-strip__item:nth-child(even) {
+    transform: none;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .service-icon-strip {
+    padding: 36px 0;
+  }
+
+  .service-icon-strip__inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .service-icon-strip__item {
+    min-height: 96px;
+  }
+
+  .service-icon-strip__item>i,
+  .service-icon-strip__item>svg {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .service-icon-strip__item::before {
+    width: 62px;
+    height: 62px;
+  }
+
+  .service-icon-strip__item::after {
+    bottom: 14px;
+    width: 42px;
+    height: 2px;
+  }
+}
+
+/* SERVICE ICON STRIP ORANGE VERSION */
+
+.service-icon-strip--orange {
+  background:
+    radial-gradient(circle at 12% 42%, rgba(255, 255, 255, 0.22), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(10, 7, 16, 0.16), transparent 26%),
+    linear-gradient(135deg, var(--carrot-orange), var(--burnt-orange)) !important;
+}
+
+.service-icon-strip--orange::before {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  opacity: 0.28;
+}
+
+.service-icon-strip--orange::after {
+  background: rgba(255, 255, 255, 0.18);
+  filter: blur(22px);
+}
+
+.service-icon-strip--orange .service-icon-strip__line {
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.42),
+      rgba(10, 7, 16, 0.18),
+      rgba(255, 255, 255, 0.42),
+      transparent);
+}
+
+.service-icon-strip--orange .service-icon-strip__item {
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+.service-icon-strip--orange .service-icon-strip__item::before {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.service-icon-strip--orange .service-icon-strip__item::after {
+  background: linear-gradient(90deg, transparent, var(--white), transparent);
+}
+
+.service-icon-strip--orange .service-icon-strip__item>i,
+.service-icon-strip--orange .service-icon-strip__item>svg {
+  color: var(--white) !important;
+}
+
+.service-icon-strip--orange .service-icon-strip__item:hover {
+  color: var(--white) !important;
+}
+
+.service-icon-strip--orange .service-icon-strip__item:hover::before {
+  border-color: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 0 34px rgba(255, 255, 255, 0.28),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.service-icon-strip--orange .service-icon-strip__item:hover>i,
+.service-icon-strip--orange .service-icon-strip__item:hover>svg {
+  color: var(--white) !important;
+  filter:
+    drop-shadow(0 0 18px rgba(255, 255, 255, 0.45)) drop-shadow(0 18px 28px rgba(10, 7, 16, 0.28));
+}
+
+/* чуть темнее hover-пятно при наведении */
+.service-icon-strip--orange .service-icon-strip__item:hover {
+  transform: translateY(-6px);
+}
