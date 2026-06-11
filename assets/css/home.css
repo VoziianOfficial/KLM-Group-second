@@ -6900,3 +6900,64 @@ body {
     height: 22px;
   }
 }
+
+/* PROCESS SECTION PHOTO BACKGROUND */
+
+.process-orbit {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg,
+      rgba(10, 7, 16, 0.94) 0%,
+      rgba(16, 25, 47, 0.86) 48%,
+      rgba(10, 7, 16, 0.94) 100%),
+    url("../images/home/services-bg.jpg") center / cover no-repeat;
+}
+
+.process-orbit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 28%, rgba(241, 90, 36, 0.24), transparent 30%),
+    radial-gradient(circle at 82% 70%, rgba(255, 255, 255, 0.07), transparent 28%),
+    linear-gradient(180deg, rgba(10, 7, 16, 0.18), rgba(10, 7, 16, 0.52));
+}
+
+.process-orbit::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  opacity: 0.28;
+  mask-image: linear-gradient(180deg, transparent, #000 18%, #000 82%, transparent);
+}
+
+.process-orbit .container {
+  position: relative;
+  z-index: 3;
+}
+
+.process-orbit__bg-wave {
+  z-index: 2;
+  opacity: 0.38;
+}
+
+.process-orbit__circle {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(241, 90, 36, 0.24), transparent 58%),
+    rgba(255, 255, 255, 0.065);
+  backdrop-filter: blur(8px);
+}
+
+.process-orbit__item p {
+  color: rgba(255, 255, 255, 0.74);
+}
