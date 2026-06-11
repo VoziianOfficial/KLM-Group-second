@@ -3600,3 +3600,74 @@ body {
     max-width: 220px;
   }
 }
+
+/* SERVICES FLOW SIMPLE PHOTO BACKGROUND */
+
+.services-flow {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(90deg,
+      rgba(10, 7, 16, 0.94) 0%,
+      rgba(10, 7, 16, 0.86) 42%,
+      rgba(16, 25, 47, 0.78) 72%,
+      rgba(10, 7, 16, 0.92) 100%),
+    url("../images/home/services-bg.jpg") center / cover no-repeat;
+}
+
+.services-flow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 18% 42%, rgba(241, 90, 36, 0.22), transparent 28%),
+    radial-gradient(circle at 72% 20%, rgba(255, 255, 255, 0.08), transparent 24%),
+    linear-gradient(180deg, rgba(10, 7, 16, 0.06), rgba(10, 7, 16, 0.36));
+}
+
+.services-flow .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* линия остается поверх фото, но под контентом */
+.services-flow__line {
+  z-index: 1;
+  opacity: 0.68;
+}
+
+/* убираем фон с “карточек”, чтобы не было дешево */
+.services-flow__item,
+.services-flow__item:nth-child(even),
+.services-flow__item:nth-child(odd) {
+  background: transparent;
+}
+
+/* делаем контент чуть ярче на фото */
+.services-flow__intro h2,
+.services-flow__item strong {
+  color: var(--white);
+}
+
+.services-flow__intro p:not(.section-label) {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.services-flow__item small {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.services-flow__item {
+  border-bottom-color: rgba(255, 255, 255, 0.18);
+}
+
+.services-flow__item:nth-child(odd) {
+  border-right-color: rgba(255, 255, 255, 0.16);
+}
+
+.services-flow__list {
+  border-top-color: rgba(255, 255, 255, 0.18);
+  backdrop-filter: none;
+}
