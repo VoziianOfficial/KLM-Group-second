@@ -1804,8 +1804,6 @@ body {
 }
 
 
-/* POLICY HERO BACKGROUND PHOTO */
-
 .policy-hero {
   background:
     linear-gradient(90deg,
@@ -1830,7 +1828,6 @@ body {
   backdrop-filter: blur(2px);
 }
 
-/* MOBILE + TABLET PHOTO POSITION */
 
 @media (max-width: 920px) {
   .policy-hero {
