@@ -3079,3 +3079,110 @@ body {
     opacity: 1;
   }
 }
+
+/* ABOUT MINI CARDS HOVER */
+
+.mini-card {
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+}
+
+.mini-card::before {
+  content: "";
+  position: absolute;
+  inset: auto 18px 0 18px;
+  height: 3px;
+  border-radius: 999px 999px 0 0;
+  background: var(--mini-accent, var(--carrot-orange));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.28s ease;
+}
+
+.mini-card::after {
+  content: "";
+  position: absolute;
+  right: -48px;
+  bottom: -48px;
+  z-index: -1;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: var(--mini-glow, rgba(241, 90, 36, 0.08));
+  transform: scale(0.65);
+  opacity: 0;
+  transition: transform 0.28s ease, opacity 0.28s ease;
+}
+
+.mini-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(241, 90, 36, 0.28);
+  box-shadow: 0 24px 54px rgba(16, 25, 47, 0.13);
+}
+
+.mini-card:hover::before {
+  transform: scaleX(1);
+}
+
+.mini-card:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.mini-card svg {
+  transition: transform 0.28s ease, color 0.28s ease;
+}
+
+.mini-card:hover svg {
+  color: var(--mini-accent, var(--carrot-orange));
+}
+
+/* card 1 */
+.mini-card:nth-child(1) {
+  --mini-accent: var(--carrot-orange);
+  --mini-glow: rgba(241, 90, 36, 0.11);
+}
+
+.mini-card:nth-child(1):hover svg {
+  transform: rotate(10deg) scale(1.12);
+}
+
+/* card 2 */
+.mini-card:nth-child(2) {
+  --mini-accent: var(--dark-navy);
+  --mini-glow: rgba(16, 25, 47, 0.09);
+}
+
+.mini-card:nth-child(2):hover svg {
+  transform: rotate(-12deg) scale(1.1);
+}
+
+/* card 3 */
+.mini-card:nth-child(3) {
+  --mini-accent: #ff7a1a;
+  --mini-glow: rgba(255, 122, 26, 0.1);
+}
+
+.mini-card:nth-child(3):hover svg {
+  transform: translateY(-3px) scale(1.12);
+}
+
+/* card 4 */
+.mini-card:nth-child(4) {
+  --mini-accent: var(--blue-graphite);
+  --mini-glow: rgba(28, 39, 64, 0.1);
+}
+
+.mini-card:nth-child(4):hover svg {
+  transform: rotate(180deg) scale(1.08);
+}
+
+/* stronger title hover */
+.mini-card h3 {
+  transition: color 0.28s ease;
+}
+
+.mini-card:hover h3 {
+  color: var(--mini-accent, var(--carrot-orange));
+}
