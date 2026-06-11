@@ -1748,3 +1748,57 @@ body {
     line-height: 1.55;
   }
 }
+
+/* HEADER INTERMEDIATE WIDTH FIX */
+
+@media (min-width: 901px) and (max-width: 1180px) {
+  .site-header {
+    height: 86px;
+    overflow: visible;
+  }
+
+  .header-inner {
+    height: 86px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 18px;
+  }
+
+  .brand {
+    flex: 0 0 auto;
+    justify-self: auto !important;
+  }
+
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .header-cta {
+    display: inline-flex !important;
+    margin-left: auto !important;
+    justify-self: auto !important;
+  }
+
+  .burger-btn {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    flex: 0 0 46px !important;
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin: 0 !important;
+    transform: none !important;
+    justify-self: auto !important;
+    z-index: 10;
+  }
+}
