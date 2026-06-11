@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Web Design Services | LA-Te</title>
+  <meta
+    name="description"
+    content="Web Design services by LA-Te help businesses create modern, responsive websites focused on clarity, trust, navigation, and conversion flow."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/services.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="LA-Te Home">
+        <span class="brand-logo" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M256 44L58 388H286L266 354H117L256 111L395 354H321L341 388H454L256 44ZM256 148L173 292H339L256 148Z"
+              fill="#F15A24"
+            />
+            <path
+              d="M218 144L249 126L362 322L331 340L218 144Z"
+              fill="#F15A24"
+            />
+          </svg>
+        </span>
+        <span class="brand-name">LA-Te</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+
+        <div class="nav-dropdown">
+          <a href="index.html#services" class="dropdown-trigger">
+            Services
+            <i data-lucide="chevron-down"></i>
+          </a>
+
+          <div class="dropdown-menu">
+            <a href="google-ads.html">Google Ads</a>
+            <a href="seo-optimization.html">SEO Optimization</a>
+            <a href="social-media-marketing.html">Social Media Marketing</a>
+            <a href="web-design.html" class="active-link">Web Design</a>
+            <a href="conversion-boost.html">Conversion Boost</a>
+            <a href="local-seo.html">Local SEO</a>
+          </div>
+        </div>
+
+        <a href="google-ads.html">Google Ads</a>
+        <a href="seo-optimization.html">SEO Optimization</a>
+        <a href="social-media-marketing.html">Social Media</a>
+        <a href="web-design.html" class="active-link">Web Design</a>
+        <a href="conversion-boost.html">Conversion Boost</a>
+        <a href="local-seo.html">Local SEO</a>
+        <a href="#final-cta">Contact</a>
+      </nav>
+
+      <a href="#final-cta" class="header-cta">Get Started</a>
+
+      <button class="burger-btn" id="burgerBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-top">
+        <a href="index.html" class="brand mobile-brand">
+          <span class="brand-logo" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M256 44L58 388H286L266 354H117L256 111L395 354H321L341 388H454L256 44ZM256 148L173 292H339L256 148Z"
+                fill="#F15A24"
+              />
+              <path
+                d="M218 144L249 126L362 322L331 340L218 144Z"
+                fill="#F15A24"
+              />
+            </svg>
+          </span>
+          <span class="brand-name">LA-Te</span>
+        </a>
+
+        <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="google-ads.html">Google Ads</a>
+        <a href="seo-optimization.html">SEO Optimization</a>
+        <a href="social-media-marketing.html">Social Media Marketing</a>
+        <a href="web-design.html" class="active-link">Web Design</a>
+        <a href="conversion-boost.html">Conversion Boost</a>
+        <a href="local-seo.html">Local SEO</a>
+        <a href="#final-cta">Contact</a>
+      </nav>
+
+      <div class="mobile-services">
+        <p>Services</p>
+        <a href="google-ads.html">Google Ads <i data-lucide="arrow-right"></i></a>
+        <a href="seo-optimization.html">SEO Optimization <i data-lucide="arrow-right"></i></a>
+        <a href="social-media-marketing.html">Social Media Marketing <i data-lucide="arrow-right"></i></a>
+        <a href="web-design.html">Web Design <i data-lucide="arrow-right"></i></a>
+        <a href="conversion-boost.html">Conversion Boost <i data-lucide="arrow-right"></i></a>
+        <a href="local-seo.html">Local SEO <i data-lucide="arrow-right"></i></a>
+      </div>
+
+      <div class="mobile-contact">
+        <a href="mailto:support@lategrowth.com">
+          <i data-lucide="mail"></i>
+          support@lategrowth.com
+        </a>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Boldog%20222%2C%20Boldog%2C%20925%2026%2C%20Slovensk%C3%A1%20republika"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i data-lucide="map-pin"></i>
+          Boldog 222, Boldog, 925 26, Slovenská republika
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- SERVICE HERO -->
+    <section
+      class="service-hero"
+      style="background-image: linear-gradient(90deg, rgba(10,7,16,0.86) 0%, rgba(10,7,16,0.72) 38%, rgba(10,7,16,0.25) 68%, rgba(10,7,16,0.08) 100%), url('assets/images/services/web-design-hero.jpg');"
+    >
+      <div class="container service-hero-content">
+        <p class="section-label">CONVERSION-FOCUSED WEBSITES</p>
+
+        <h1>
+          Web Design Focused on Clarity,
+          <span>Trust, and Conversion</span>
+        </h1>
+
+        <p>
+          Create a modern, responsive website that supports trust, clear navigation,
+          and customer action.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#final-cta" class="btn btn-primary">
+            Start a Project
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a href="index.html#services" class="btn btn-secondary">
+            Back to Services
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="service-overview section-light">
+      <div class="container overview-grid">
+        <div>
+          <p class="section-label orange">Overview</p>
+
+          <h2>
+            Websites Designed to Guide Visitors With
+            <span>Confidence</span>
+          </h2>
+        </div>
+
+        <div class="overview-text">
+          <p>
+            A strong website should not only look good, but also guide visitors clearly.
+            LA-Te designs modern digital experiences focused on structure, readability,
+            trust, and conversion flow.
+          </p>
+
+          <p>
+            The goal is to create a website that feels premium, works smoothly across devices,
+            and helps visitors understand what to do next.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INCLUDES -->
+    <section class="includes section-light">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>What This Service <span>Includes</span></h2>
+        </div>
+
+        <div class="include-grid">
+          <article class="info-card">
+            <i data-lucide="map"></i>
+            <h3>Website Structure Planning</h3>
+            <p>Clear page structure designed around user goals and business priorities.</p>
+          </article>
+
+          <article class="info-card">
+            <i data-lucide="monitor-smartphone"></i>
+            <h3>Responsive Design Direction</h3>
+            <p>Layouts planned to feel comfortable on desktop, tablet, and mobile.</p>
+          </article>
+
+          <article class="info-card">
+            <i data-lucide="sparkles"></i>
+            <h3>UX/UI Improvements</h3>
+            <p>Interface and user experience improvements for smoother navigation.</p>
+          </article>
+
+          <article class="info-card">
+            <i data-lucide="mouse-pointer-click"></i>
+            <h3>CTA Placement</h3>
+            <p>Strategic calls-to-action that help users move toward inquiries.</p>
+          </article>
+
+          <article class="info-card">
+            <i data-lucide="layers-3"></i>
+            <h3>Visual Hierarchy</h3>
+            <p>Clear hierarchy that makes your content easier to scan and understand.</p>
+          </article>
+
+          <article class="info-card">
+            <i data-lucide="workflow"></i>
+            <h3>Conversion-Focused Page Flow</h3>
+            <p>Page logic designed to support trust, clarity, and customer action.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits section-light">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-label orange">Benefits</p>
+          <h2>
+            Built to Improve First Impression,
+            <span>Navigation, and Inquiries</span>
+          </h2>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <i data-lucide="sparkles"></i>
+            <h3>Improve First Impression</h3>
+            <p>Make your business feel more modern, professional, and reliable online.</p>
+          </article>
+
+          <article class="benefit-card">
+            <i data-lucide="shield-check"></i>
+            <h3>Build Trust Faster</h3>
+            <p>Use layout, content, visuals, and structure to support credibility.</p>
+          </article>
+
+          <article class="benefit-card">
+            <i data-lucide="navigation"></i>
+            <h3>Make Navigation Easier</h3>
+            <p>Help visitors find services, understand value, and move through the site clearly.</p>
+          </article>
+
+          <article class="benefit-card">
+            <i data-lucide="send"></i>
+            <h3>Support More Inquiries</h3>
+            <p>Guide visitors toward contact actions with better CTAs and page flow.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="service-process section-dark">
+      <div class="container">
+        <div class="section-heading center light">
+          <h2>Our Web Design <span>Process</span></h2>
+          <p>Focused steps for a clearer, more premium and conversion-oriented website.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <i data-lucide="scan-search"></i>
+            <h3>Website Review</h3>
+            <p>
+              We review your current website, audience needs, business goals, and user journey gaps.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <i data-lucide="layout-template"></i>
+            <h3>Structure Planning</h3>
+            <p>
+              We define page structure, section flow, navigation logic, and key conversion points.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <i data-lucide="palette"></i>
+            <h3>Visual Direction</h3>
+            <p>
+              We create a modern visual direction with typography, spacing, contrast, and brand feel.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <i data-lucide="mouse-pointer-click"></i>
+            <h3>Conversion Flow</h3>
+            <p>
+              We refine CTAs, forms, trust elements, and page logic to support more inquiries.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY FEATURES -->
+    <section class="key-features section-light">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>Key <span>Features</span></h2>
+        </div>
+
+        <div class="feature-list">
+          <article>
+            <i data-lucide="check"></i>
+            <span>Website structure planning</span>
+          </article>
+
+          <article>
+            <i data-lucide="check"></i>
+            <span>Responsive design direction</span>
+          </article>
+
+          <article>
+            <i data-lucide="check"></i>
+            <span>UX/UI improvements</span>
+          </article>
+
+          <article>
+            <i data-lucide="check"></i>
+            <span>CTA placement</span>
+          </article>
+
+          <article>
+            <i data-lucide="check"></i>
+            <span>Visual hierarchy</span>
+          </article>
+
+          <article>
+            <i data-lucide="check"></i>
+            <span>Conversion-focused page flow</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE CTA -->
+    <section class="service-cta section-dark">
+      <div class="container">
+        <div class="service-cta-card">
+          <div>
+            <p class="section-label">READY TO IMPROVE YOUR WEBSITE?</p>
+
+            <h2>
+              Build a Clearer Website Direction With
+              <span>LA-Te</span>
+            </h2>
+
+            <p>
+              Let’s turn your website into a cleaner, more trustworthy, and more conversion-focused
+              digital experience.
+            </p>
+          </div>
+
+          <a href="#final-cta" class="btn btn-primary">
+            Start a Project
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED SERVICES -->
+    <section class="related-services section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <h2>Related <span>Services</span></h2>
+          <p>Explore other LA-Te services that can support your full digital growth system.</p>
+        </div>
+
+        <div class="related-grid">
+          <article class="related-card">
+            <i data-lucide="badge-ad"></i>
+            <h3>Google Ads</h3>
+            <p>Launch focused paid campaigns designed to attract qualified traffic.</p>
+            <a href="google-ads.html">Learn More <span>→</span></a>
+          </article>
+
+          <article class="related-card">
+            <i data-lucide="search-check"></i>
+            <h3>SEO Optimization</h3>
+            <p>Improve organic visibility with search-focused structure and content direction.</p>
+            <a href="seo-optimization.html">Learn More <span>→</span></a>
+          </article>
+
+          <article class="related-card">
+            <i data-lucide="share-2"></i>
+            <h3>Social Media Marketing</h3>
+            <p>Build a clearer brand presence with campaign and content planning.</p>
+            <a href="social-media-marketing.html">Learn More <span>→</span></a>
+          </article>
+
+          <article class="related-card">
+            <i data-lucide="trending-up"></i>
+            <h3>Conversion Boost</h3>
+            <p>Improve landing pages, CTAs, forms, and user journeys.</p>
+            <a href="conversion-boost.html">Learn More <span>→</span></a>
+          </article>
+
+          <article class="related-card">
+            <i data-lucide="map-pin"></i>
+            <h3>Local SEO</h3>
+            <p>Improve local search visibility for businesses that need nearby clients.</p>
+            <a href="local-seo.html">Learn More <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section-light">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>Web Design <span>FAQ</span></h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item active">
+            <button class="faq-question" type="button">
+              <span>Can you redesign an existing website?</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Existing websites can be improved with better structure, visuals, UX,
+                and conversion flow.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Is mobile design included?</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Every design should be responsive and comfortable on mobile, tablet,
+                and desktop.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Can web design support better conversions?</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Clear structure, strong CTAs, better content hierarchy, and trust elements
+                can help visitors take action.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Do I need new photos for my website?</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Not always. Existing visuals can be reviewed, and new visual direction can be planned
+                when stronger brand presentation is needed.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta section-dark" id="final-cta">
+      <div class="container final-cta-grid">
+        <div>
+          <p class="section-label">LET’S BUILD A CLEARER WEBSITE</p>
+
+          <h2>
+            Ready to Grow With
+            <span>Web Design?</span>
+          </h2>
+
+          <p>
+            Contact LA-Te and start building a modern website direction for your business.
+          </p>
+        </div>
+
+        <div class="final-cta-actions">
+          <a href="mailto:support@lategrowth.com" class="btn btn-primary">
+            Start a Project
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a href="index.html#services" class="btn btn-secondary">
+            Back to Services
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-logo" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M256 44L58 388H286L266 354H117L256 111L395 354H321L341 388H454L256 44ZM256 148L173 292H339L256 148Z"
+                fill="#F15A24"
+              />
+              <path
+                d="M218 144L249 126L362 322L331 340L218 144Z"
+                fill="#F15A24"
+              />
+            </svg>
+          </span>
+          <span class="brand-name">LA-Te</span>
+        </a>
+
+        <p>
+          Digital marketing and advertising solutions designed to support growth,
+          visibility, leads, and stronger digital performance.
+        </p>
+
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">
+            <i data-lucide="facebook"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i data-lucide="instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="google-ads.html">Google Ads</a>
+        <a href="seo-optimization.html">SEO Optimization</a>
+        <a href="social-media-marketing.html">Social Media Marketing</a>
+        <a href="web-design.html">Web Design</a>
+        <a href="conversion-boost.html">Conversion Boost</a>
+        <a href="local-seo.html">Local SEO</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <a href="mailto:support@lategrowth.com">
+          <i data-lucide="mail"></i>
+          support@lategrowth.com
+        </a>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Boldog%20222%2C%20Boldog%2C%20925%2026%2C%20Slovensk%C3%A1%20republika"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i data-lucide="map-pin"></i>
+          Boldog 222, Boldog, 925 26, Slovenská republika
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 LA-Te. All rights reserved.</p>
+      <a href="#">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner" aria-hidden="true">
+    <div class="cookie-content">
+      <div>
+        <h3>Cookie Preferences</h3>
+        <p>
+          We use cookies to improve your browsing experience and understand website performance.
+          You can accept or decline non-essential cookies.
+        </p>
+
+        <div class="cookie-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+      </div>
+
+      <div class="cookie-actions">
+        <button type="button" class="btn btn-secondary" id="declineCookies">Decline</button>
+        <button type="button" class="btn btn-primary" id="acceptCookies">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/services.js"></script>
+</body>
+</html>

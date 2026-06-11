@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>LA-Te | Digital Marketing & Advertising Agency</title>
+  <meta
+    name="description"
+    content="LA-Te is a digital marketing and advertising agency helping businesses improve visibility, traffic, conversions, and growth through focused online strategies."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="assets/css/home.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="LA-Te Home">
+        <span class="brand-logo" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M256 44L58 388H286L266 354H117L256 111L395 354H321L341 388H454L256 44ZM256 148L173 292H339L256 148Z"
+              fill="#F15A24"
+            />
+            <path
+              d="M218 144L249 126L362 322L331 340L218 144Z"
+              fill="#F15A24"
+            />
+          </svg>
+        </span>
+        <span class="brand-name">LA-Te</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+
+        <div class="nav-dropdown">
+          <a href="#services" class="dropdown-trigger">
+            Services
+            <i data-lucide="chevron-down"></i>
+          </a>
+
+          <div class="dropdown-menu">
+            <a href="google-ads.html">Google Ads</a>
+            <a href="seo-optimization.html">SEO Optimization</a>
+            <a href="social-media-marketing.html">Social Media Marketing</a>
+            <a href="web-design.html">Web Design</a>
+            <a href="conversion-boost.html">Conversion Boost</a>
+            <a href="local-seo.html">Local SEO</a>
+          </div>
+        </div>
+
+        <a href="google-ads.html">Google Ads</a>
+        <a href="seo-optimization.html">SEO Optimization</a>
+        <a href="social-media-marketing.html">Social Media</a>
+        <a href="web-design.html">Web Design</a>
+        <a href="conversion-boost.html">Conversion Boost</a>
+        <a href="local-seo.html">Local SEO</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="header-cta">Get Started</a>
+
+      <button class="burger-btn" id="burgerBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-top">
+        <a href="index.html" class="brand mobile-brand">
+          <span class="brand-logo" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M256 44L58 388H286L266 354H117L256 111L395 354H321L341 388H454L256 44ZM256 148L173 292H339L256 148Z"
+                fill="#F15A24"
+              />
+              <path
+                d="M218 144L249 126L362 322L331 340L218 144Z"
+                fill="#F15A24"
+              />
+            </svg>
+          </span>
+          <span class="brand-name">LA-Te</span>
+        </a>
+
+        <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html">Home</a>
+        <a href="#services">Services</a>
+        <a href="google-ads.html">Google Ads</a>
+        <a href="seo-optimization.html">SEO Optimization</a>
+        <a href="social-media-marketing.html">Social Media Marketing</a>
+        <a href="web-design.html">Web Design</a>
+        <a href="conversion-boost.html">Conversion Boost</a>
+        <a href="local-seo.html">Local SEO</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="mobile-services">
+        <p>Services</p>
+        <a href="google-ads.html">Google Ads <i data-lucide="arrow-right"></i></a>
+        <a href="seo-optimization.html">SEO Optimization <i data-lucide="arrow-right"></i></a>
+        <a href="social-media-marketing.html">Social Media Marketing <i data-lucide="arrow-right"></i></a>
+        <a href="web-design.html">Web Design <i data-lucide="arrow-right"></i></a>
+        <a href="conversion-boost.html">Conversion Boost <i data-lucide="arrow-right"></i></a>
+        <a href="local-seo.html">Local SEO <i data-lucide="arrow-right"></i></a>
+      </div>
+
+      <div class="mobile-contact">
+        <a href="mailto:support@lategrowth.com">
+          <i data-lucide="mail"></i>
+          support@lategrowth.com
+        </a>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Boldog%20222%2C%20Boldog%2C%20925%2026%2C%20Slovensk%C3%A1%20republika"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i data-lucide="map-pin"></i>
+          Boldog 222, Boldog, 925 26, Slovenská republika
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section-dark" id="home">
+      <div class="hero-decor hero-decor-one"></div>
+      <div class="hero-decor hero-decor-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="section-label">SMARTER MARKETING. REAL RESULTS.</p>
+
+          <h1>
+            We Drive Smarter
+            <span>Growth</span>
+            for Your Brand
+          </h1>
+
+          <p class="hero-text">
+            LA-Te is a results-driven digital marketing and advertising agency helping businesses
+            attract the right audience, increase visibility, and convert clicks into loyal customers.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              Get a Free Consultation
+              <i data-lucide="arrow-right"></i>
+            </a>
+
+            <a href="#services" class="btn btn-secondary">
+              View Our Services
+            </a>
+          </div>
+
+          <div class="hero-points">
+            <span><i data-lucide="circle-dot"></i> Data-Driven Strategies</span>
+            <span><i data-lucide="circle-dot"></i> Transparent Reporting</span>
+            <span><i data-lucide="circle-dot"></i> Conversion Focused</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-circle">
+            <img src="assets/images/home/hero-circle.jpg" alt="LA-Te digital marketing team working on campaigns" />
+          </div>
+
+          <div class="floating-card card-growth">
+            <span>Campaign Growth</span>
+            <strong>Focused Direction</strong>
+          </div>
+
+          <div class="floating-card card-traffic">
+            <span>Traffic Quality</span>
+            <strong>Better Audience Fit</strong>
+          </div>
+
+          <div class="floating-card card-flow">
+            <span>Conversion Flow</span>
+            <strong>Clearer User Journey</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEYWORDS STRIP -->
+    <section class="keywords-strip" aria-label="Marketing keywords">
+      <div class="keywords-track">
+        <span>Strategy</span>
+        <span>Growth</span>
+        <span>Google Ads</span>
+        <span>SEO</span>
+        <span>Web Design</span>
+        <span>Conversion</span>
+        <span>Social Media</span>
+        <span>Local SEO</span>
+        <span>Strategy</span>
+        <span>Growth</span>
+        <span>Google Ads</span>
+        <span>SEO</span>
+        <span>Web Design</span>
+        <span>Conversion</span>
+        <span>Social Media</span>
+        <span>Local SEO</span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section-light">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="assets/images/home/about-team.jpg" alt="LA-Te team planning a digital marketing strategy" />
+        </div>
+
+        <div class="about-content">
+          <p class="section-label orange">About LA-Te</p>
+
+          <h2>
+            Your Focused Digital Marketing
+            <span>Partner</span>
+          </h2>
+
+          <p>
+            LA-Te combines strategy, creativity, and performance marketing to help businesses grow
+            through paid ads, SEO, social media, web design, and conversion-focused digital systems.
+          </p>
+
+          <div class="about-benefits">
+            <article class="mini-card">
+              <i data-lucide="sparkles"></i>
+              <h3>Results First</h3>
+              <p>We focus on strategies that deliver real results.</p>
+            </article>
+
+            <article class="mini-card">
+              <i data-lucide="clock-3"></i>
+              <h3>Transparent</h3>
+              <p>Clear communication and honest reporting.</p>
+            </article>
+
+            <article class="mini-card">
+              <i data-lucide="badge-check"></i>
+              <h3>Tailored Strategies</h3>
+              <p>Strategies built around your goals and audience.</p>
+            </article>
+
+            <article class="mini-card">
+              <i data-lucide="refresh-cw"></i>
+              <h3>Ongoing Growth</h3>
+              <p>Continuous optimization for long-term success.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE FOCUS -->
+    <section class="core-focus section-light">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>Our Core <span>Focus</span></h2>
+        </div>
+
+        <div class="focus-grid">
+          <article class="focus-card">
+            <i data-lucide="diamond"></i>
+            <h3>UX/UI Friendly</h3>
+          </article>
+
+          <article class="focus-card">
+            <i data-lucide="target"></i>
+            <h3>Focused on Target</h3>
+          </article>
+
+          <article class="focus-card">
+            <i data-lucide="search"></i>
+            <h3>Clear Campaign Flow</h3>
+          </article>
+
+          <article class="focus-card">
+            <i data-lucide="gauge"></i>
+            <h3>Conversion Tracking</h3>
+          </article>
+
+          <article class="focus-card">
+            <i data-lucide="badge-ad"></i>
+            <h3>Google Ads Strategy</h3>
+          </article>
+
+          <article class="focus-card">
+            <i data-lucide="chart-no-axes-combined"></i>
+            <h3>SEO Growth Planning</h3>
+          </article>
+
+          <article class="focus-card">
+            <i data-lucide="message-square"></i>
+            <h3>Social Media Campaigns</h3>
+          </article>
+
+          <article class="focus-card">
+            <i data-lucide="layout-dashboard"></i>
+            <h3>Conversion-Focused Web Design</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="services-preview section-dark" id="services">
+      <div class="container">
+        <div class="section-heading center light">
+          <h2>Our <span>Services</span></h2>
+          <p>
+            Focused digital marketing services designed to improve visibility, traffic, and conversions.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <i data-lucide="badge-ad"></i>
+            <h3>Google Ads</h3>
+            <p>Targeted paid campaigns built to attract qualified traffic.</p>
+            <a href="google-ads.html">Learn More <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <i data-lucide="search-check"></i>
+            <h3>SEO Optimization</h3>
+            <p>Search visibility strategies designed to grow organic reach.</p>
+            <a href="seo-optimization.html">Learn More <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <i data-lucide="share-2"></i>
+            <h3>Social Media Marketing</h3>
+            <p>Content and campaign direction for stronger brand presence.</p>
+            <a href="social-media-marketing.html">Learn More <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <i data-lucide="monitor-smartphone"></i>
+            <h3>Web Design</h3>
+            <p>Modern websites designed for clarity, trust, and conversion.</p>
+            <a href="web-design.html">Learn More <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <i data-lucide="trending-up"></i>
+            <h3>Conversion Boost</h3>
+            <p>Page and funnel improvements that turn visitors into leads.</p>
+            <a href="conversion-boost.html">Learn More <span>→</span></a>
+          </article>
+
+          <article class="service-card">
+            <i data-lucide="map-pin"></i>
+            <h3>Local SEO</h3>
+            <p>Local search visibility for businesses that need nearby clients.</p>
+            <a href="local-seo.html">Learn More <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="why section-light">
+      <div class="container why-grid">
+        <div class="why-intro">
+          <p class="section-label orange">Why LA-Te</p>
+
+          <h2>
+            Why Choose <span>LA-Te?</span>
+          </h2>
+
+          <p>
+            We combine strategy, creativity, and performance to create digital marketing systems
+            that support measurable business growth.
+          </p>
+        </div>
+
+        <div class="why-cards">
+          <article class="info-card">
+            <i data-lucide="crosshair"></i>
+            <h3>Results-Driven</h3>
+            <p>We focus on strategies that support real and measurable business outcomes.</p>
+          </article>
+
+          <article class="info-card">
+            <i data-lucide="users-round"></i>
+            <h3>Expert Team</h3>
+            <p>
+              Our approach combines digital strategy, campaign structure, content direction,
+              and conversion thinking.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <i data-lucide="workflow"></i>
+            <h3>Transparent Process</h3>
+            <p>You get clear communication, honest reporting, and a structured workflow.</p>
+          </article>
+
+          <article class="info-card">
+            <i data-lucide="refresh-cw"></i>
+            <h3>Ongoing Optimization</h3>
+            <p>
+              We continue improving campaigns, websites, and digital funnels for stronger performance.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process section-dark">
+      <div class="container">
+        <div class="section-heading center light">
+          <h2>Our <span>Process</span></h2>
+          <p>Unlock stronger digital growth with focused and structured steps.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <i data-lucide="messages-square"></i>
+            <h3>Free Consultation</h3>
+            <p>
+              We learn about your business, goals, audience, current marketing channels,
+              and growth priorities.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <i data-lucide="target"></i>
+            <h3>Strategy Planning</h3>
+            <p>
+              We create a clear digital marketing direction with selected channels,
+              content ideas, campaign goals, and website priorities.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <i data-lucide="rocket"></i>
+            <h3>Campaign / Website Setup</h3>
+            <p>
+              We prepare or improve campaigns, landing pages, website structure,
+              tracking direction, and key digital assets.
+            </p>
+          </article>
+
+          <article class="process-card">
+            <i data-lucide="chart-no-axes-combined"></i>
+            <h3>Optimization & Growth</h3>
+            <p>
+              We review performance, improve weak points, optimize campaigns,
+              and support long-term digital growth.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVANTAGE CTA -->
+    <section class="advantage section-dark">
+      <div class="container">
+        <div class="advantage-card">
+          <div class="advantage-visual">
+            <i data-lucide="bar-chart-3"></i>
+          </div>
+
+          <div class="advantage-content">
+            <h2>
+              Ready to Accelerate Your Business
+              <span>Growth?</span>
+            </h2>
+
+            <p>
+              LA-Te helps businesses connect strategy, visibility, paid traffic, content,
+              websites, and conversion improvements into one clear digital growth system.
+            </p>
+
+            <a href="#contact" class="btn btn-primary">
+              Get Started Today
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMPAIGN FEATURES -->
+    <section class="campaign-features section-light">
+      <div class="container">
+        <div class="section-heading">
+          <h2>
+            Built for Campaigns That Need Clarity, Control, and
+            <span>Growth</span>
+          </h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="info-card">
+            <i data-lucide="traffic-cone"></i>
+            <h3>Paid Traffic Direction</h3>
+            <p>Planning and structuring campaigns that bring targeted traffic.</p>
+          </article>
+
+          <article class="info-card">
+            <i data-lucide="search"></i>
+            <h3>Search Visibility Support</h3>
+            <p>Improving website visibility through SEO direction and content structure.</p>
+          </article>
+
+          <article class="info-card">
+            <i data-lucide="share-2"></i>
+            <h3>Social Content Planning</h3>
+            <p>Creating a clearer social media presence with content ideas and campaign logic.</p>
+          </article>
+
+          <article class="info-card">
+            <i data-lucide="mouse-pointer-click"></i>
+            <h3>Conversion-Focused Website Flow</h3>
+            <p>Improving pages, CTAs, forms, and user journeys to support more inquiries.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATISTICS / RESULTS STRIP -->
+    <section class="results-strip section-light">
+      <div class="container results-grid">
+        <article>
+          <i data-lucide="network"></i>
+          <h3>Multi-channel Strategy</h3>
+        </article>
+
+        <article>
+          <i data-lucide="target"></i>
+          <h3>Performance-Focused Planning</h3>
+        </article>
+
+        <article>
+          <i data-lucide="file-chart-column"></i>
+          <h3>Transparent Reporting</h3>
+        </article>
+
+        <article>
+          <i data-lucide="layout-template"></i>
+          <h3>Conversion-Oriented Design</h3>
+        </article>
+
+        <article>
+          <i data-lucide="chart-no-axes-combined"></i>
+          <h3>SEO & Paid Traffic Direction</h3>
+        </article>
+
+        <article>
+          <i data-lucide="refresh-cw"></i>
+          <h3>Ongoing Optimization</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials section-dark">
+      <div class="container">
+        <div class="section-heading center light">
+          <h2>What Our <span>Clients</span> Say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <i data-lucide="quote"></i>
+            <p>
+              “LA-Te helped us create a clearer marketing direction and understand how our ads,
+              website, and content could work together.”
+            </p>
+            <div>
+              <strong>Marketing Manager</strong>
+              <span>Service Business</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <i data-lucide="quote"></i>
+            <p>
+              “The process felt organized and transparent. The strategy was easy to understand,
+              and the website direction became much clearer.”
+            </p>
+            <div>
+              <strong>Business Owner</strong>
+              <span>Local Company</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <i data-lucide="quote"></i>
+            <p>
+              “We needed a cleaner digital presence, and LA-Te helped us connect our website
+              structure with stronger campaign logic.”
+            </p>
+            <div>
+              <strong>Founder</strong>
+              <span>Growing Brand</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section-light">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>Frequently Asked <span>Questions</span></h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item active">
+            <button class="faq-question" type="button">
+              <span>What services can LA-Te help with?</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                LA-Te can help with Google Ads, SEO optimization, social media marketing,
+                web design, conversion improvements, and local SEO.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Do I need a full marketing plan before contacting LA-Te?</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                No. You can contact us with a general idea, and we will help define the best
+                direction for your business.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Can LA-Te work with my existing website or campaigns?</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. We can review your current website, ads, content, or SEO direction and
+                suggest improvements.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              <span>What happens after I send the contact form?</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We review your request and contact you to discuss your goals, business needs,
+                and possible next steps.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Can I choose only one service?</span>
+              <i data-lucide="plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. You can start with one service, such as Google Ads, SEO, web design,
+                or conversion optimization.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section-dark" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-content">
+          <p class="section-label">Contact LA-Te</p>
+
+          <h2>
+            Get <span>In Touch</span>
+          </h2>
+
+          <p>
+            Have a project in mind? Let’s talk and build a clearer digital growth direction
+            for your business.
+          </p>
+
+          <div class="contact-details">
+            <a href="mailto:support@lategrowth.com">
+              <i data-lucide="mail"></i>
+              support@lategrowth.com
+            </a>
+
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Boldog%20222%2C%20Boldog%2C%20925%2026%2C%20Slovensk%C3%A1%20republika"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i data-lucide="map-pin"></i>
+              Boldog 222, Boldog, 925 26, Slovenská republika
+            </a>
+
+            <p>
+              <i data-lucide="clock-3"></i>
+              Mon - Fri, 9:00 AM - 6:00 PM
+            </p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+
+          <div class="form-row">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" />
+          </div>
+
+          <div class="form-row">
+            <label for="service">Selected Service</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option value="Google Ads">Google Ads</option>
+              <option value="SEO Optimization">SEO Optimization</option>
+              <option value="Social Media Marketing">Social Media Marketing</option>
+              <option value="Web Design">Web Design</option>
+              <option value="Conversion Boost">Conversion Boost</option>
+              <option value="Local SEO">Local SEO</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project" required></textarea>
+          </div>
+
+          <label class="custom-checkbox">
+            <input type="checkbox" id="privacyAgreement" required />
+            <span class="checkbox-box"></span>
+            <span>
+              I agree to the
+              <a href="privacy-policy.html">Privacy Policy</a>
+              and
+              <a href="terms-of-service.html">Terms of Service</a>.
+            </span>
+          </label>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            Send Message
+            <i data-lucide="arrow-right"></i>
+          </button>
+
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-logo" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M256 44L58 388H286L266 354H117L256 111L395 354H321L341 388H454L256 44ZM256 148L173 292H339L256 148Z"
+                fill="#F15A24"
+              />
+              <path
+                d="M218 144L249 126L362 322L331 340L218 144Z"
+                fill="#F15A24"
+              />
+            </svg>
+          </span>
+          <span class="brand-name">LA-Te</span>
+        </a>
+
+        <p>
+          Digital marketing and advertising solutions designed to support growth,
+          visibility, leads, and stronger digital performance.
+        </p>
+
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">
+            <i data-lucide="facebook"></i>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <i data-lucide="instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <a href="index.html">Home</a>
+        <a href="google-ads.html">Google Ads</a>
+        <a href="seo-optimization.html">SEO Optimization</a>
+        <a href="social-media-marketing.html">Social Media Marketing</a>
+        <a href="web-design.html">Web Design</a>
+        <a href="conversion-boost.html">Conversion Boost</a>
+        <a href="local-seo.html">Local SEO</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Legal</h3>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <a href="mailto:support@lategrowth.com">
+          <i data-lucide="mail"></i>
+          support@lategrowth.com
+        </a>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Boldog%20222%2C%20Boldog%2C%20925%2026%2C%20Slovensk%C3%A1%20republika"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i data-lucide="map-pin"></i>
+          Boldog 222, Boldog, 925 26, Slovenská republika
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 LA-Te. All rights reserved.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- COOKIE BANNER -->
+  <div class="cookie-banner" id="cookieBanner" aria-hidden="true">
+    <div class="cookie-content">
+      <div>
+        <h3>Cookie Preferences</h3>
+        <p>
+          We use cookies to improve your browsing experience and understand website performance.
+          You can accept or decline non-essential cookies.
+        </p>
+
+        <div class="cookie-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+        </div>
+      </div>
+
+      <div class="cookie-actions">
+        <button type="button" class="btn btn-secondary" id="declineCookies">Decline</button>
+        <button type="button" class="btn btn-primary" id="acceptCookies">Accept</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
