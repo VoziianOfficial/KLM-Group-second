@@ -1773,3 +1773,19 @@ p {
 .header-cta {
   justify-self: end;
 }
+
+@media (max-width: 900px) {
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desktop-nav,
+  .header-cta {
+    display: none;
+  }
+
+  .burger-btn {
+    display: inline-flex;
+  }
+}
