@@ -2882,3 +2882,124 @@ body {
     margin-left: -3%;
   }
 }
+
+/* INCLUDES CARDS FIX — ICONS BACK + SOFT HOVERS */
+
+.includes .info-card {
+  --card-accent: var(--carrot-orange);
+  --card-bg: rgba(241, 90, 36, 0.06);
+
+  position: relative;
+  overflow: hidden;
+  background: var(--white);
+  border-color: rgba(10, 7, 16, 0.08);
+  transition:
+    transform 0.28s ease,
+    border-color 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+/* calm random accents */
+.includes .info-card:nth-child(1) {
+  --card-accent: #C94A43;
+  --card-bg: rgba(201, 74, 67, 0.07);
+}
+
+.includes .info-card:nth-child(2) {
+  --card-accent: #D8A72E;
+  --card-bg: rgba(216, 167, 46, 0.08);
+}
+
+.includes .info-card:nth-child(3) {
+  --card-accent: #F15A24;
+  --card-bg: rgba(241, 90, 36, 0.08);
+}
+
+.includes .info-card:nth-child(4) {
+  --card-accent: #315FA8;
+  --card-bg: rgba(49, 95, 168, 0.07);
+}
+
+.includes .info-card:nth-child(5) {
+  --card-accent: #7A7F89;
+  --card-bg: rgba(122, 127, 137, 0.08);
+}
+
+.includes .info-card:nth-child(6) {
+  --card-accent: #10192F;
+  --card-bg: rgba(16, 25, 47, 0.07);
+}
+
+/* soft color corner */
+.includes .info-card::before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  right: -42px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--card-bg);
+  transition: transform 0.28s ease;
+  pointer-events: none;
+}
+
+/* hover underline */
+.includes .info-card::after {
+  content: "";
+  position: absolute;
+  left: 26px;
+  right: 26px;
+  bottom: 0;
+  height: 3px;
+  border-radius: 999px 999px 0 0;
+  background: var(--card-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.28s ease;
+  pointer-events: none;
+}
+
+/* IMPORTANT: icon back to original place */
+.includes .info-card>i,
+.includes .info-card>svg {
+  position: absolute !important;
+  top: 22px !important;
+  right: 22px !important;
+  width: 24px !important;
+  height: 24px !important;
+  color: var(--card-accent) !important;
+  z-index: 2;
+  transition:
+    transform 0.28s ease,
+    color 0.28s ease,
+    filter 0.28s ease;
+}
+
+.includes .info-card h3,
+.includes .info-card p {
+  position: relative;
+  z-index: 2;
+}
+
+.includes .info-card:hover {
+  transform: translateY(-5px);
+  border-color: color-mix(in srgb, var(--card-accent) 34%, transparent);
+  box-shadow:
+    0 22px 46px rgba(16, 25, 47, 0.1),
+    0 10px 24px var(--card-bg);
+}
+
+.includes .info-card:hover::before {
+  transform: scale(1.25);
+}
+
+.includes .info-card:hover::after {
+  transform: scaleX(1);
+}
+
+.includes .info-card:hover>i,
+.includes .info-card:hover>svg {
+  transform: translateY(-2px) rotate(-6deg);
+  filter: drop-shadow(0 8px 14px var(--card-bg));
+}
