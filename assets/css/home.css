@@ -7015,7 +7015,6 @@ body {
   }
 }
 
-/* GROWTH STACK — NO CARDS, NO CIRCLES */
 
 .growth-stack {
   position: relative;
@@ -7199,7 +7198,6 @@ body {
   color: var(--white);
 }
 
-/* TABLET */
 
 @media (max-width: 980px) {
   .growth-stack {
@@ -7233,7 +7231,6 @@ body {
   }
 }
 
-/* MOBILE */
 
 @media (max-width: 640px) {
   .growth-stack {
@@ -7283,7 +7280,6 @@ body {
   }
 }
 
-/* WHY TRANSFORMATION — BEFORE / AFTER SCREEN */
 
 .why-transform {
   position: relative;
@@ -7413,7 +7409,6 @@ body {
   color: var(--medium-grey);
 }
 
-/* MIDDLE SWITCH */
 
 .why-transform__switch {
   position: absolute;
@@ -7455,7 +7450,6 @@ body {
   text-transform: uppercase;
 }
 
-/* CHAOS WORDS */
 
 .why-transform__cloud {
   position: absolute;
@@ -7533,7 +7527,6 @@ body {
   }
 }
 
-/* AFTER FORMULA */
 
 .why-transform__formula {
   display: inline-flex;
@@ -7580,7 +7573,6 @@ body {
   transform: translateY(-3px);
 }
 
-/* TABLET */
 
 @media (max-width: 980px) {
   .why-transform {
@@ -7621,7 +7613,6 @@ body {
   }
 }
 
-/* MOBILE */
 
 @media (max-width: 640px) {
   .why-transform {
@@ -7698,7 +7689,6 @@ body {
   }
 }
 
-/* WHY TRANSFORMATION — AIRY VERSION WITHOUT CARD-IN-CARD */
 
 .why-transform {
   padding: 86px 0 92px !important;
@@ -7760,7 +7750,6 @@ body {
   color: var(--medium-grey) !important;
 }
 
-/* мягкое разделение между before / after */
 
 .why-transform__stage::after {
   content: "";
@@ -7778,7 +7767,6 @@ body {
   pointer-events: none;
 }
 
-/* центральный переключатель — легче, без тяжелой карточки */
 
 .why-transform__switch {
   width: 118px !important;
@@ -7803,7 +7791,6 @@ body {
   color: var(--carrot-orange) !important;
 }
 
-/* хаотичные слова — теперь воздушные, без ощущения карточек */
 
 .why-transform__cloud {
   left: 0 !important;
@@ -7820,7 +7807,6 @@ body {
   box-shadow: 0 12px 28px rgba(16, 25, 47, 0.055);
 }
 
-/* правая формула легче */
 
 .why-transform__formula {
   margin-top: 32px !important;
@@ -7849,7 +7835,6 @@ body {
   border-radius: 999px !important;
 }
 
-/* добавляем легкие декоративные пятна, но без рамок */
 
 .why-transform__side--before::after,
 .why-transform__side--after::after {
@@ -7881,7 +7866,6 @@ body {
   z-index: 2;
 }
 
-/* TABLET */
 
 @media (max-width: 980px) {
   .why-transform {
@@ -7935,7 +7919,6 @@ body {
   }
 }
 
-/* MOBILE */
 
 @media (max-width: 640px) {
   .why-transform {
@@ -8012,7 +7995,6 @@ body {
   }
 }
 
-/* WHY TRANSFORM CLOUD — JUICIER HOVER */
 
 .why-transform__cloud {
   pointer-events: auto !important;
@@ -8081,7 +8063,6 @@ body {
   transform: translateX(120%);
 }
 
-/* чуть разные оттенки, чтобы облако было живее */
 .why-transform__cloud span:nth-child(1) {
   --cloud-accent: #F15A24;
 }
@@ -8106,7 +8087,6 @@ body {
   --cloud-accent: #C7471D;
 }
 
-/* MOBILE */
 @media (max-width: 640px) {
   .why-transform__cloud span {
     position: static !important;
@@ -8121,7 +8101,6 @@ body {
   }
 }
 
-/* WHY TRANSFORM FORMULA — JUICY HOVER */
 
 .why-transform__formula {
   position: relative;
@@ -8182,7 +8161,6 @@ body {
   text-shadow: 0 0 18px rgba(241, 90, 36, 0.38);
 }
 
-/* MOBILE */
 @media (max-width: 640px) {
   .why-transform__formula span:hover {
     transform: translateY(-3px) scale(1.02);
@@ -8193,7 +8171,6 @@ body {
   }
 }
 
-/* MARKETING SIGNAL SCAN — DIFFERENT SECTION STYLE */
 
 .signal-scan {
   position: relative;
@@ -8312,7 +8289,6 @@ body {
   line-height: 1.7;
 }
 
-/* SCREEN */
 
 .signal-scan__screen {
   position: relative;
@@ -8374,7 +8350,6 @@ body {
   bottom: 2%;
 }
 
-/* TRACKS */
 
 .signal-scan__track {
   position: absolute;
@@ -8464,7 +8439,6 @@ body {
   bottom: 26px;
 }
 
-/* TABLET */
 
 @media (max-width: 980px) {
   .signal-scan {
@@ -8529,7 +8503,6 @@ body {
   }
 }
 
-/* MOBILE */
 
 @media (max-width: 640px) {
   .signal-scan {
@@ -8585,7 +8558,6 @@ body {
   }
 }
 
-/* SIGNAL SCAN TITLE EXACT TWO-LINE BREAK */
 
 .signal-scan__top h2 span {
   display: block;
@@ -8608,7 +8580,6 @@ body {
   }
 }
 
-/* SIGNAL SCAN TITLE — THINNER + MORE AIR */
 
 .signal-scan__top h2 {
   font-weight: 700 !important;
@@ -8621,7 +8592,6 @@ body {
   letter-spacing: -0.05em !important;
 }
 
-/* MARKETING EQUATION — NO CARDS, NO ICONS */
 
 .marketing-equation {
   position: relative;
@@ -8735,7 +8705,6 @@ body {
   line-height: 1.72;
 }
 
-/* FORMULA */
 
 .marketing-equation__formula {
   position: relative;
@@ -9087,7 +9056,6 @@ body {
   }
 }
 
-/* MARKETING EQUATION — OUTLINE TEXT FORMULA */
 
 .marketing-equation__formula span,
 .marketing-equation__formula strong {
@@ -9110,12 +9078,10 @@ body {
   -webkit-text-stroke: 1.7px var(--carrot-orange);
 }
 
-/* знаки между словами оставляем обычными */
 .marketing-equation__formula em {
   color: rgba(10, 7, 16, 0.26) !important;
 }
 
-/* hover — буквы заливаются цветом */
 .marketing-equation__formula span:hover,
 .marketing-equation__formula strong:hover {
   transform: translateY(-8px);
@@ -9126,13 +9092,11 @@ body {
   filter: drop-shadow(0 14px 26px rgba(241, 90, 36, 0.22));
 }
 
-/* когда наводим на всю формулу — знаки тоже оживают */
 .marketing-equation__formula:hover em {
   color: var(--carrot-orange) !important;
   transform: rotate(-6deg) scale(1.12);
 }
 
-/* MOBILE */
 @media (max-width: 640px) {
 
   .marketing-equation__formula span,
@@ -9145,7 +9109,6 @@ body {
   }
 }
 
-/* MARKETING EQUATION — THICKER OUTLINE */
 
 .marketing-equation__formula span,
 .marketing-equation__formula strong {
@@ -9163,7 +9126,6 @@ body {
   -webkit-text-stroke-color: var(--carrot-orange) !important;
 }
 
-/* MOBILE — чуть тоньше, чтобы не слипалось */
 @media (max-width: 640px) {
 
   .marketing-equation__formula span,
@@ -9177,7 +9139,6 @@ body {
   }
 }
 
-/* FINAL GROWTH SIGNATURE — LIGHT WOW SECTION */
 
 .final-growth-signature {
   position: relative;
@@ -9397,7 +9358,6 @@ body {
   font-style: normal;
 }
 
-/* TABLET */
 
 @media (max-width: 980px) {
   .final-growth-signature {
@@ -9429,7 +9389,6 @@ body {
   }
 }
 
-/* MOBILE */
 
 @media (max-width: 640px) {
   .final-growth-signature {
