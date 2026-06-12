@@ -8620,3 +8620,559 @@ body {
   font-weight: 700 !important;
   letter-spacing: -0.05em !important;
 }
+
+/* MARKETING EQUATION — NO CARDS, NO ICONS */
+
+.marketing-equation {
+  position: relative;
+  padding: 74px 0 82px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 24%, rgba(241, 90, 36, 0.08), transparent 30%),
+    radial-gradient(circle at 88% 72%, rgba(16, 25, 47, 0.07), transparent 32%),
+    linear-gradient(180deg, #ffffff, var(--soft-white));
+  color: var(--deep-black);
+}
+
+.marketing-equation::before {
+  content: "FORMULA";
+  position: absolute;
+  left: -24px;
+  bottom: -20px;
+  color: rgba(10, 7, 16, 0.035);
+  font-size: clamp(100px, 18vw, 260px);
+  font-weight: 900;
+  line-height: 0.8;
+  letter-spacing: -0.12em;
+  pointer-events: none;
+}
+
+.marketing-equation::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(10, 7, 16, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 7, 16, 0.03) 1px, transparent 1px);
+  background-size: 74px 74px;
+  opacity: 0.34;
+  pointer-events: none;
+  mask-image: linear-gradient(90deg, transparent, #000 16%, #000 84%, transparent);
+}
+
+.marketing-equation__beam {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -22%;
+  width: 22%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(241, 90, 36, 0.12),
+      rgba(255, 255, 255, 0.55),
+      transparent);
+  transform: skewX(-16deg);
+  animation: marketingEquationBeam 7s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes marketingEquationBeam {
+  0% {
+    left: -26%;
+    opacity: 0;
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  44% {
+    left: 112%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 112%;
+    opacity: 0;
+  }
+}
+
+.marketing-equation .container {
+  position: relative;
+  z-index: 2;
+}
+
+.marketing-equation__top {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 54px;
+  align-items: end;
+  margin-bottom: 42px;
+}
+
+.marketing-equation__top .section-label {
+  grid-column: 1 / -1;
+  margin-bottom: -22px;
+}
+
+.marketing-equation__top h2 {
+  max-width: 620px;
+  font-size: clamp(42px, 5.4vw, 78px);
+  line-height: 0.94;
+  letter-spacing: -0.07em;
+  font-weight: 700;
+}
+
+.marketing-equation__top h2 span {
+  display: block;
+  color: var(--carrot-orange);
+}
+
+.marketing-equation__top p:not(.section-label) {
+  max-width: 560px;
+  color: var(--medium-grey);
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+/* FORMULA */
+
+.marketing-equation__formula {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(3px, 2vw, 3px);
+  min-height: 160px;
+  padding: 26px 0;
+  border-top: 1px solid rgba(10, 7, 16, 0.08);
+  border-bottom: 1px solid rgba(10, 7, 16, 0.08);
+  overflow: hidden;
+}
+
+.marketing-equation__formula::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(241, 90, 36, 0.34), transparent);
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.marketing-equation__formula span,
+.marketing-equation__formula strong {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--deep-black);
+  font-size: clamp(28px, 5vw, 76px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  white-space: nowrap;
+  transition:
+    transform 0.32s ease,
+    color 0.32s ease,
+    text-shadow 0.32s ease;
+}
+
+.marketing-equation__formula strong {
+  color: var(--carrot-orange);
+  font-weight: 800;
+}
+
+.marketing-equation__formula em {
+  position: relative;
+  z-index: 2;
+  color: rgba(10, 7, 16, 0.22);
+  font-size: clamp(22px, 3vw, 44px);
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1;
+  transition:
+    transform 0.32s ease,
+    color 0.32s ease;
+}
+
+.marketing-equation__formula span:hover,
+.marketing-equation__formula strong:hover {
+  transform: translateY(-8px);
+  color: var(--carrot-orange);
+  text-shadow: 0 0 28px rgba(241, 90, 36, 0.2);
+}
+
+.marketing-equation__formula:hover em {
+  color: rgba(241, 90, 36, 0.55);
+  transform: rotate(-6deg) scale(1.12);
+}
+
+
+.marketing-equation__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.marketing-equation__bottom p {
+  position: relative;
+  flex: 1;
+  padding-top: 14px;
+  color: var(--medium-grey);
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+.marketing-equation__bottom p::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--carrot-orange);
+}
+
+
+
+@media (max-width: 980px) {
+  .marketing-equation {
+    padding: 62px 0 70px;
+  }
+
+  .marketing-equation__top {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: 34px;
+    text-align: center;
+  }
+
+  .marketing-equation__top .section-label {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .marketing-equation__top h2,
+  .marketing-equation__top p:not(.section-label) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .marketing-equation__formula {
+    flex-wrap: wrap;
+    row-gap: 18px;
+    min-height: auto;
+    padding: 30px 0;
+  }
+
+  .marketing-equation__bottom {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+@media (max-width: 640px) {
+  .marketing-equation {
+    padding: 48px 0 54px;
+  }
+
+  .marketing-equation__top h2 {
+    max-width: 360px;
+    font-size: clamp(34px, 10vw, 46px);
+    line-height: 1;
+  }
+
+  .marketing-equation__top p:not(.section-label) {
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+
+  .marketing-equation__formula {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 12px 10px;
+    padding: 24px 0;
+  }
+
+  .marketing-equation__formula span,
+  .marketing-equation__formula strong {
+    font-size: clamp(25px, 8vw, 34px);
+    letter-spacing: -0.06em;
+  }
+
+  .marketing-equation__formula em {
+    font-size: 22px;
+  }
+
+  .marketing-equation__formula strong {
+    grid-column: 1 / -1;
+    margin-top: 4px;
+  }
+
+  .marketing-equation__bottom {
+    display: grid;
+    gap: 12px;
+  }
+
+  .marketing-equation__bottom p {
+    padding-top: 10px;
+    font-size: 12.5px;
+  }
+}
+
+
+.marketing-equation {
+  border-top: 0 !important;
+}
+
+.marketing-equation__top h2 {
+  max-width: 580px;
+}
+
+.marketing-equation__top h2 span {
+  display: block;
+  white-space: nowrap;
+}
+
+.marketing-equation__formula {
+  border-top: 0 !important;
+}
+
+
+@media (max-width: 640px) {
+  .marketing-equation__top h2 {
+    max-width: 360px;
+  }
+
+  .marketing-equation__top h2 span {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 370px) {
+  .marketing-equation__top h2 span {
+    white-space: normal;
+  }
+}
+
+.signal-scan {
+  margin-bottom: 0 !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+}
+
+.signal-scan::before,
+.signal-scan::after {
+  border-bottom: 0 !important;
+}
+
+.marketing-equation {
+  margin-top: -1px !important;
+  padding-top: 82px !important;
+  border-top: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  background:
+    radial-gradient(circle at 12% 24%, rgba(241, 90, 36, 0.08), transparent 30%),
+    radial-gradient(circle at 88% 72%, rgba(16, 25, 47, 0.07), transparent 32%),
+    linear-gradient(180deg, var(--soft-white) 0%, #ffffff 45%, var(--soft-white) 100%) !important;
+}
+
+
+.marketing-equation .container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -84px;
+  width: 100vw;
+  height: 12px;
+  background: var(--soft-white);
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 20;
+}
+
+
+.marketing-equation__top {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr) !important;
+  gap: 60px !important;
+  align-items: center !important;
+  margin-bottom: 44px !important;
+}
+
+.marketing-equation__top h2 {
+  max-width: 560px !important;
+  font-size: clamp(40px, 4.9vw, 68px) !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.06em !important;
+  font-weight: 700 !important;
+}
+
+.marketing-equation__top h2 span {
+  display: block !important;
+  white-space: nowrap !important;
+  font-weight: 700 !important;
+}
+
+.marketing-equation__top p:not(.section-label) {
+  max-width: 580px !important;
+  margin-top: 0 !important;
+}
+
+.marketing-equation__formula {
+  border-top: 0 !important;
+  border-bottom: 0 !important;
+}
+
+.marketing-equation__formula::before {
+  display: none !important;
+  content: none !important;
+}
+
+@media (max-width: 980px) {
+  .marketing-equation {
+    margin-top: -1px !important;
+    padding-top: 66px !important;
+  }
+
+  .marketing-equation .container::before {
+    top: -68px;
+  }
+
+  .marketing-equation__top {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    text-align: center !important;
+  }
+
+  .marketing-equation__top h2 {
+    max-width: 560px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: clamp(38px, 7vw, 58px) !important;
+  }
+
+  .marketing-equation__top p:not(.section-label) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .marketing-equation {
+    padding-top: 52px !important;
+  }
+
+  .marketing-equation .container::before {
+    top: -54px;
+  }
+
+  .marketing-equation__top h2 {
+    max-width: 360px !important;
+    font-size: clamp(34px, 10vw, 46px) !important;
+    line-height: 1.02 !important;
+  }
+
+  .marketing-equation__top h2 span {
+    white-space: normal !important;
+  }
+}
+
+/* MARKETING EQUATION — OUTLINE TEXT FORMULA */
+
+.marketing-equation__formula span,
+.marketing-equation__formula strong {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.5px rgba(10, 7, 16, 0.78);
+
+  text-shadow: none !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.055em !important;
+
+  transition:
+    transform 0.32s ease,
+    -webkit-text-stroke-color 0.32s ease,
+    -webkit-text-fill-color 0.32s ease,
+    filter 0.32s ease;
+}
+
+.marketing-equation__formula strong {
+  -webkit-text-stroke: 1.7px var(--carrot-orange);
+}
+
+/* знаки между словами оставляем обычными */
+.marketing-equation__formula em {
+  color: rgba(10, 7, 16, 0.26) !important;
+}
+
+/* hover — буквы заливаются цветом */
+.marketing-equation__formula span:hover,
+.marketing-equation__formula strong:hover {
+  transform: translateY(-8px);
+
+  -webkit-text-fill-color: var(--carrot-orange);
+  -webkit-text-stroke-color: var(--carrot-orange);
+
+  filter: drop-shadow(0 14px 26px rgba(241, 90, 36, 0.22));
+}
+
+/* когда наводим на всю формулу — знаки тоже оживают */
+.marketing-equation__formula:hover em {
+  color: var(--carrot-orange) !important;
+  transform: rotate(-6deg) scale(1.12);
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+
+  .marketing-equation__formula span,
+  .marketing-equation__formula strong {
+    -webkit-text-stroke-width: 1.1px;
+  }
+
+  .marketing-equation__formula strong {
+    -webkit-text-stroke-width: 1.25px;
+  }
+}
+
+/* MARKETING EQUATION — THICKER OUTLINE */
+
+.marketing-equation__formula span,
+.marketing-equation__formula strong {
+  -webkit-text-stroke-width: 2.4px !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.045em !important;
+}
+
+.marketing-equation__formula span {
+  -webkit-text-stroke-color: rgba(10, 7, 16, 0.9) !important;
+}
+
+.marketing-equation__formula strong {
+  -webkit-text-stroke-width: 2.8px !important;
+  -webkit-text-stroke-color: var(--carrot-orange) !important;
+}
+
+/* MOBILE — чуть тоньше, чтобы не слипалось */
+@media (max-width: 640px) {
+
+  .marketing-equation__formula span,
+  .marketing-equation__formula strong {
+    -webkit-text-stroke-width: 1.5px !important;
+    letter-spacing: -0.035em !important;
+  }
+
+  .marketing-equation__formula strong {
+    -webkit-text-stroke-width: 1.8px !important;
+  }
+}
